@@ -1,0 +1,337 @@
+// Imports
+@import "./fonts";
+@import "./colors";
+@import "./boxShadow";
+
+/*==================== bASE ====================*/
+$aboutMECircle: 77.5vw;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: $backgroundColor_White;
+}
+
+/*  hides website scrollbar, But Keep scrolling Functionality */
+::-webkit-scrollbar {
+	display: none;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: $secondary_Purple;
+}
+
+/* Question Asked */
+h2 {
+	font-family: $fontStyle_header;
+	font-size: $fontSize_normal;
+}
+
+p {
+	font-family: $fontStyle_body;
+	font-size: $fontSize_normal;
+	line-height: 1.25em;
+}
+
+/*============================== DARK MODE THEME ==============================*/
+.darkModeON {
+	background: $backgroundGradient;
+	background-size: 1200% 600%;
+	background-position: center;
+	background-repeat: no-repeat;
+	animation: GradientKeyframes 20s ease-in-out infinite;
+
+	header {
+		.nav {
+			/* Left div title section */
+			.navTitle {
+				a {
+					color: $secondary_whiteDouble;
+				}
+
+				a:hover {
+					color: $AdditionalColor_Purple1;
+				}
+			}
+
+			/* Right links section */
+			.navMenu {
+				button {
+					.bi {
+						color: $baseColor_white;
+					}
+				}
+
+				li {
+					a {
+						color: $secondary_whiteDouble;
+					}
+
+					a:hover {
+						color: $AdditionalColor_Purple1;
+					}
+				}
+			}
+		}
+	}
+
+	.hero {
+		margin-bottom: 5rem;
+
+		.heroBackground {
+			border-radius: 5px;
+
+			.heroOuterBackground {
+				box-shadow: $box-shadow-0;
+			}
+
+			.heroOuterBackground:hover {
+				transition: all 0.5s ease-in-out;
+				box-shadow: $box-shadow-0;
+			}
+		}
+	}
+}
+
+/*============================== NAVIGATION MENU ==============================*/
+header {
+	padding: 0.5rem;
+
+	.nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		/* Left div title section */
+		.navTitle {
+			width: fit-content;
+
+			a {
+				letter-spacing: 0.1rem;
+				text-decoration: none;
+				color: $baseColor_black;
+				font-size: $fontSize_large;
+				font-family: $fontStyle_header;
+			}
+
+			a:hover {
+				transition: all 0.25s ease-in-out;
+				color: $AdditionalColor_darkPurple;
+			}
+		}
+
+		/* Right links section */
+		.navMenu {
+			display: flex;
+			margin-top: 15px;
+			justify-content: right;
+
+			button {
+				border: none;
+				list-style: none;
+				background: none;
+				margin-right: 1rem;
+
+				.bi {
+					color: $baseColor_black;
+					font-size: $fontSize_darkModeBtn;
+				}
+			}
+
+			li {
+				padding: 0 20px;
+				align-self: center;
+
+				a {
+					text-decoration: none;
+					color: $baseColor_black;
+					font-size: $fontSize_normal;
+					font-family: $fontStyle_option1;
+
+					.uil {
+						display: none;
+						padding: 7.5px;
+					}
+				}
+
+				a:hover {
+					transition: all 0.25s ease-in-out;
+					color: $AdditionalColor_darkPurple;
+				}
+			}
+		}
+
+		/* Mobile Menu Home Button */
+		.mobileHomebtn {
+			display: none;
+		}
+	}
+}
+
+/*============================== HERO ==============================*/
+.hero {
+	margin-bottom: 5rem;
+
+	.heroBackground {
+		background: url(/src/img/HeroBackground.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		.heroOuterBackground {
+			display: grid;
+			position: relative;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+			grid-template-areas: "hero-overlap";
+			box-shadow: $box-shadow-5;
+
+			.heroInnerIackground {
+				grid-area: hero-overlap;
+				display: flex;
+				padding: 1rem 2rem;
+				position: relative;
+				align-items: center;
+				justify-content: space-between;
+
+				.heroLeftside {
+					width: 25rem;
+					padding: 2rem;
+					text-align: left;
+					border-radius: 5px;
+					background-color: $backgroundColor_White;
+					box-shadow: $box-shadow-1;
+
+					h2 {
+						font-family: $fontStyle_header;
+						font-size: $fontSize_large-0;
+					}
+
+					.subtitle {
+						font-family: $fontStyle_option1;
+						font-size: $fontSize_normal;
+					}
+
+					p {
+						margin-top: 1rem;
+						font-family: $fontStyle_body;
+						font-size: $fontSize_normal;
+					}
+				}
+
+				.heroLeftside:hover {
+					transition: all 0.25s ease-in-out;
+					box-shadow: $box-shadow-6;
+				}
+
+				.heroRightside {
+					padding: 1rem 2rem;
+					text-align: center;
+					border-radius: 5px;
+					align-items: center;
+					box-shadow: $box-shadow-1;
+					background-color: $backgroundColor_White;
+
+					h2 {
+						font-family: $fontStyle_header;
+						font-size: $fontSize_large;
+					}
+
+					p {
+						margin: auto;
+						margin-top: 1rem;
+						font-family: $fontStyle_body;
+						font-size: $fontSize_normal;
+					}
+
+					.contactMeBtn {
+						padding: 1rem;
+						list-style: none;
+
+						a {
+							padding: 0.75rem;
+							cursor: pointer;
+							border-radius: 5px;
+							text-decoration: none;
+							color: $baseColor_white;
+							font-size: $fontSize_normal;
+							font-family: $fontStyle_option1;
+							background-color: $AdditionalColor_Purple1;
+							box-shadow: $box-shadow-5;
+						}
+
+						a:hover {
+							transition: all 0.25s ease-in-out;
+							box-shadow: $box-shadow-6;
+							background-color: $AdditionalColor-darkPurple2;
+						}
+					}
+
+					.socialmMediaLinks {
+						padding: 0 1rem;
+						display: flex;
+						margin-top: 1rem;
+						justify-content: space-between;
+
+						a {
+							font-size: $fontSize_large-0;
+							color: $AdditionalColor-lightGrey;
+						}
+
+						a:hover {
+							transition: all 0.25s ease-in-out;
+							color: $AdditionalColor_Purple1;
+						}
+					}
+				}
+
+				.heroRightside:hover {
+					transition: all 0.25s ease-in-out;
+					box-shadow: $box-shadow-6;
+				}
+			}
+		}
+
+		.heroOuterBackground:hover {
+			transition: all 0.5s ease-in-out;
+			box-shadow: $box-shadow-8;
+		}
+
+		.profileImageBackground {
+			grid-area: hero-overlap;
+			align-self: end;
+			justify-self: center;
+
+			img {
+				height: 400px;
+				width: 600px;
+			}
+		}
+	}
+
+	.heroBackground:hover {
+		transition: all 0.25s ease-in-out;
+		background: url(/src/img/HeroBackground3.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}

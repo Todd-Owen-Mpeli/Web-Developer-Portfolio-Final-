@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Website Title -->
+		<title>Web Developer Portfolio | Todd Owen Mpeli</title>
+		<!-- Website icon -->
+		<link
+			rel="icon"
+			href="/src/img/Profile-Picture-icon 1.png"
+			type="image/x-icon"
+		/>
+		<!-- CSS stylesheet link -->
+		<link rel="stylesheet" href="/src/css/styles.css" />
+		<!-- AOS CDN.js Reveal Animation  -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+			integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+			crossorigin="anonymous"
+		/>
+		<!-- Bootstrap Icon Link -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+		/>
+		<!-- Font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/f3926e9237.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Icons for Mobile viewport -->
+		<link
+			rel="stylesheet"
+			href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+		/>
+	</head>
+	<body>
+		<!-- ===== MAIN ===== -->
+		<main class="main" id="main">
+			<div id="darkMode">
+				<!--===== HEADER =====-->
+				<header class="header container" id="header">
+					<!-- Navigation Section -->
+					<nav class="nav">
+						<div class="navTitle" id="navTitle">
+							<a href="/src/index.html"><strong>TODD</strong></a>
+						</div>
+						<ul class="navMenu" id="nav-menu">
+							<button onclick="darkModeBackground()" id="darkModeBtn">
+								<i class="bi bi-toggle-off"></i>
+							</button>
+							<li>
+								<a href="#projects"
+									><i class="uil uil-browser nav__icon"></i>Projects</a
+								>
+							</li>
+							<li>
+								<a href="#about"><i class="uil uil-user nav__icon"></i>About</a>
+							</li>
+							<li>
+								<a href="#skills"
+									><i class="uil uil-file-alt nav__icon"></i>Skills</a
+								>
+							</li>
+							<li>
+								<a href="#"
+									><i class="uil uil-location-arrow nav__icon"></i>Contact</a
+								>
+							</li>
+						</ul>
+						<!-- Mobile-view home button -->
+						<div class="mobileHomebtn">
+							<button class="toggleBtn" id="nav-toggle">
+								<i class="uil-apps"></i>
+							</button>
+						</div>
+					</nav>
+				</header>
+
+				<!--===== HERO =====-->
+				<section class="hero container" id="hero">
+					<div
+						class="heroBackground"
+						id="heroBackgroundImage"
+						onmouseout="heroBackgroundTwo()"
+						data-aos="fade-in"
+						data-aos-delay="200"
+						data-aos-duration="1000"
+					>
+						<div class="heroOuterBackground">
+							<div class="heroInnerIackground">
+								<div class="heroLeftside">
+									<h2
+										data-aos="fade-in"
+										data-aos-delay="400"
+										data-aos-duration="1000"
+									>
+										<strong>HI, I'M TODD OWEN</strong>
+									</h2>
+									<h2
+										class="subtitle"
+										data-aos="fade-in"
+										data-aos-delay="400"
+										data-aos-duration="1000"
+									>
+										<strong> Web Developer</strong>
+									</h2>
+									<p
+										data-aos="fade-in"
+										data-aos-delay="400"
+										data-aos-duration="1000"
+									>
+										I build projects from web development to all different types
+										of niches and industries wide applicable projects.<br /><br />
+									</p>
+								</div>
+								<div class="heroRightside">
+									<h2
+										data-aos="fade-in"
+										data-aos-delay="400"
+										data-aos-duration="1000"
+									>
+										<strong>How can I help you?</strong>
+									</h2>
+									<p
+										data-aos="fade-in"
+										data-aos-delay="400"
+										data-aos-duration="1000"
+									>
+										Let's get in touch today.<br /><br />
+									</p>
+									<div
+										class="contactMeBtn"
+										data-aos="fade-up"
+										data-aos-delay="400"
+										data-aos-duration="1000"
+									>
+										<li>
+											<a
+												href="https://www.linkedin.com/in/todd-owen-mpeli-831b18121/"
+												target="_blank"
+												rel="noopener noreferrer"
+											>
+												Contact Me</a
+											>
+										</li>
+									</div>
+									<ul
+										class="socialmMediaLinks"
+										data-aos="fade-in"
+										data-aos-delay="400"
+										data-aos-duration="1000"
+									>
+										<li
+											data-aos="fade-in"
+											data-aos-delay="400"
+											data-aos-duration="1000"
+										>
+											<a
+												href="https://www.linkedin.com/in/todd-owen-mpeli-831b18121/"
+												target="_blank"
+												><i class="uil uil-linkedin"></i
+											></a>
+										</li>
+										<li
+											data-aos="fade-in"
+											data-aos-delay="400"
+											data-aos-duration="2000"
+										>
+											<a
+												href="https://github.com/Todd-Owen-Mpeli"
+												target="_blank"
+												><i class="uil uil-github"></i
+											></a>
+										</li>
+										<li
+											data-aos="fade-in"
+											data-aos-delay="400"
+											data-aos-duration="3000"
+										>
+											<a
+												href="https://twitter.com/ToddOwenMpeli"
+												target="_blank"
+												><i class="uil uil-twitter"></i
+											></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="profileImageBackground">
+								<img
+									src="/src/img/880px x 600px 6.png"
+									alt="Profile Picture"
+									data-aos="fade-in"
+									data-aos-delay="400"
+									data-aos-duration="2000"
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!--===== TOP SECTION =====-->
+			<section class="topSection container" id="topSection">
+				<div class="outer_container" id="outer_container">
+					<h2 id="q_title">
+						<strong>Web application Development</strong>
+					</h2>
+				</div>
+				<div class="question_content">
+					<div class="info_container">
+						<div class="content">
+							<div>
+								<h2 id="header1"><strong>Project Description</strong></h2>
+								<p id="paraph1">
+									<br />
+									JavaScript Quiz/ questionnaire application build for user data
+									collection.
+								</p>
+							</div>
+							<div id="cc">
+								<h2>
+									<strong><br />Motivation</strong>
+								</h2>
+								<p>
+									<br />
+									To develope an Quiz / questionnaire application for user input
+									collection. In situations whereby collecting user experience
+									is possible. This quiz app can be applied, modified and or
+									tailored to multiple situations.
+								</p>
+							</div>
+						</div>
+						<div class="nextPage px-4">
+							<button class="button" id="submit">Page 2</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--===== PROJECTS =====-->
+			<section class="projects container" id="projects">
+				<div class="projects__background-display">
+					<div class="projects__content">
+						<div class="mainside_project-container">
+							<div>
+								<h2 class="projects__title">
+									<strong>A fully featured web framework for Node.js</strong>
+								</h2>
+							</div>
+							<div>
+								<h2 class="recommended__title">Projects recommend for you</h2>
+							</div>
+							<div class="recommended-projects__section row">
+								<div class="recommended-projects col">
+									<div class="recommended-projects__image">
+										<a
+											href="https://www.linkedin.com/in/todd-owen-mpeli-831b18121/"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<img
+												src="/img/Projects images/cyberpunk cover.png"
+												alt="cyberpunk 2077"
+												class="coverPicture"
+										/></a>
+									</div>
+									<div class="recommended-projects__discription">
+										<div class="recommended-projects__titles">
+											<h2 class="recommended-projects__h">
+												<strong>Cyberpunk 2077</strong>
+											</h2>
+											<p class="recommended-projects__p">
+												HMTL, CSS, JavaScript
+											</p>
+										</div>
+										<div class="recommended-projects__buttons">
+											<div class="more-info__background">
+												<a
+													onclick="showProjectInfo()"
+													target="_blank"
+													rel="noopener noreferrer"
+													>More info</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="recommended-projects col">
+									<div class="recommended-projects__image">
+										<a
+											href="https://www.linkedin.com/in/todd-owen-mpeli-831b18121/"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<img
+												src="/img/Projects images/red dead redemption 2 cover.png"
+												alt="cyberpunk 2077"
+												class="coverPicture"
+										/></a>
+									</div>
+									<div class="recommended-projects__discription">
+										<div class="recommended-projects__titles">
+											<h2 class="recommended-projects__h">
+												<strong>Red Dead Redemption 2</strong>
+											</h2>
+											<p class="recommended-projects__p">Java & JavaFX</p>
+										</div>
+										<div class="recommended-projects__buttons">
+											<div class="more-info__background">
+												<a
+													onclick="showProjectInfo()"
+													target="_blank"
+													rel="noopener noreferrer"
+													>More info</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="recommended-projects col">
+									<div class="recommended-projects__image">
+										<a
+											href="https://www.linkedin.com/in/todd-owen-mpeli-831b18121/"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<img
+												src="/img/Projects images/horizon zero dawn cover.png"
+												alt="cyberpunk 2077"
+												class="coverPicture"
+										/></a>
+									</div>
+									<div class="recommended-projects__discription">
+										<div class="recommended-projects__titles">
+											<h2 class="recommended-projects__h">
+												<strong>Horizon Zero Dawn</strong>
+											</h2>
+											<p class="recommended-projects__p">
+												HMTL, CSS, JavaScript
+											</p>
+										</div>
+										<div class="recommended-projects__buttons">
+											<div class="more-info__background">
+												<a
+													onclick="showProjectInfo()"
+													target="_blank"
+													rel="noopener noreferrer"
+													>More info</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="featuredProjects">
+								<h2 class="featuredProjects__title">More Featured Projects</h2>
+							</div>
+							<div class="outerContainer">
+								<div class="revealPageN">
+									<button class="buttonN" id="featuredProjectsBtn">
+										<i class="bi bi-plus-lg"></i>
+									</button>
+								</div>
+								<div class="info_containerN" id="info_containerN">
+									<div class="contentN" id="contentN">
+										<div class="top-games__display row">
+											<div class="games col">
+												<div class="games__image">
+													<a
+														href="http://127.0.0.1:5500/Projects/Quiz-app/quizApp.html"
+														target="_blank"
+														rel="noopener noreferrer"
+													>
+														<img
+															src="/img/Projects images/battlefield 2042 cover.png"
+															alt="Battlefield 2042"
+															class="coverPicture"
+													/></a>
+												</div>
+												<div class="games__description">
+													<h2 class="featuredProjects__header">
+														Quiz Application
+													</h2>
+													<p class="projects__p">JavaScript, HTML & CSS</p>
+												</div>
+											</div>
+											<div class="games col">
+												<div class="games__image">
+													<a
+														href="https://www.linkedin.com/in/todd-owen-mpeli-831b18121/"
+														target="_blank"
+														rel="noopener noreferrer"
+													>
+														<img
+															src="/img/Projects images/mafia 2 cover.png"
+															alt="Mafia II"
+															class="coverPicture"
+													/></a>
+												</div>
+												<div class="games__description">
+													<h2 class="featuredProjects__header">Mafia II</h2>
+													<p class="projects__p">Java, JavaScript</p>
+												</div>
+											</div>
+											<div class="games col">
+												<div class="games__image">
+													<a
+														href="https://www.linkedin.com/in/todd-owen-mpeli-831b18121/"
+														target="_blank"
+														rel="noopener noreferrer"
+													>
+														<img
+															src="/img/Projects images/gta 5 cover.png"
+															alt="Grand Theft Auto 5"
+															class="coverPicture"
+													/></a>
+												</div>
+												<div class="games__description">
+													<h2 class="featuredProjects__header">
+														Grand Theft Auto 5
+													</h2>
+													<p class="projects__p">HTML, CSS, JavaScript</p>
+												</div>
+											</div>
+											<div class="games col">
+												<div class="games__image">
+													<a
+														href="https://www.linkedin.com/in/todd-owen-mpeli-831b18121/"
+														target="_blank"
+														rel="noopener noreferrer"
+													>
+														<img
+															src="/img/Projects images/the witcher 3 cover.png"
+															alt="The Witcher 3"
+															class="coverPicture"
+													/></a>
+												</div>
+												<div class="games__description">
+													<h2 class="featuredProjects__header">
+														The Witcher 3
+													</h2>
+													<p class="projects__p">Java, JavaScript</p>
+												</div>
+											</div>
+											<div class="games col">
+												<div class="games__image">
+													<a
+														href="https://www.linkedin.com/in/todd-owen-mpeli-831b18121/"
+														target="_blank"
+														rel="noopener noreferrer"
+													>
+														<img
+															src="/img/Projects images/mass effect 3 cover.png"
+															alt="Mass Effect 3"
+															class="coverPicture"
+													/></a>
+												</div>
+												<div class="games__description">
+													<h2 class="featuredProjects__header">
+														Mass Effect 3
+													</h2>
+													<p class="projects__p">HTML, CSS, JavaScript</p>
+												</div>
+											</div>
+											<div class="games col">
+												<div class="games__image">
+													<a
+														href="https://www.linkedin.com/in/todd-owen-mpeli-831b18121/"
+														target="_blank"
+														rel="noopener noreferrer"
+													>
+														<img
+															src="/img/Projects images/amoung us cover.png"
+															alt="Among Us"
+															class="coverPicture"
+													/></a>
+												</div>
+												<div class="games__description">
+													<h2 class="featuredProjects__header">Among Us</h2>
+													<p class="projects__p">Java</p>
+												</div>
+											</div>
+											<div class="games col">
+												<div class="games__image">
+													<a
+														href="https://www.linkedin.com/in/todd-owen-mpeli-831b18121/"
+														target="_blank"
+														rel="noopener noreferrer"
+													>
+														<img
+															src="/img/Projects images/far cry 6 cover.png"
+															alt="Far Cry 6"
+															class="coverPicture"
+													/></a>
+												</div>
+												<div class="games__description">
+													<h2 class="featuredProjects__header">Far Cry 6</h2>
+													<p class="projects__p">HTML, CSS, JavaScript</p>
+												</div>
+											</div>
+											<div class="games col">
+												<div class="games__image">
+													<a
+														href="https://www.linkedin.com/in/todd-owen-mpeli-831b18121/"
+														target="_blank"
+														rel="noopener noreferrer"
+													>
+														<img
+															src="/img/Projects images/assassin's creed odyssey cover.png"
+															alt="Assassin's Creed® Odyssey"
+															class="coverPicture"
+													/></a>
+												</div>
+												<div class="games__description">
+													<h2 class="featuredProjects__header">
+														Assassin's Creed® Odyssey
+													</h2>
+													<p class="projects__p">HTML, CSS, JavaScript</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--===== ABOUT =====-->
+			<section class="about-me container" id="about">
+				<div class="about-me__background-display">
+					<div class="background-circle">
+						<span class="circle"></span>
+					</div>
+					<div class="about-me__outer-display">
+						<div class="about-me__outer-display-background">
+							<div class="about-me__profile-picture">
+								<img
+									id="profile-picture"
+									src="/img/880px x 600px 1.png"
+									alt="profile pictures"
+								/>
+							</div>
+							<div class="about-me__content">
+								<div class="about-me__inner-content">
+									<div>
+										<h2 class="about-me__title">
+											<strong>A little bit about me</strong>
+										</h2>
+									</div>
+									<p class="about-me__p">
+										<br />
+										My name is Todd Owen Mpeli and I am a junior Developer with
+										a passion for building <br />user-centric applications.<br /><br />
+
+										Technology has always been a major interest of mine. And I
+										have always had<br />
+										a strong drive in providing problem solving software apps.
+									</p>
+								</div>
+								<div class="about-me__inner-content1 row">
+									<div class="about-me__Hobbies col">
+										<div class="about-me-image__overlay">
+											<span class="Hobbies__circle1"></span>
+											<img
+												class="xbox_image"
+												src="/img/xbox controller.png"
+												alt=""
+											/>
+										</div>
+
+										<h2 class="about-me__h">
+											<strong>Hobbies & Activities</strong>
+										</h2>
+										<p class="about-me__p1">
+											I have a strong passion for Painting shoes and visual
+											graphic artworks I also have a strong interest & passion
+											for building computers. <br /><br />More specifically my
+											skills for Computer Hardware installation example
+											Motherboard, RAM, SSD etc.
+										</p>
+									</div>
+									<div class="about-me__Activities col">
+										<div class="about-me-image__overlay">
+											<span class="Hobbies__circle1"></span>
+											<img
+												class="clipboard_image"
+												src="/img/Endorement clipboard.png"
+												alt=""
+											/>
+										</div>
+										<h2 class="about-me__h">
+											<strong>Endorsements</strong> <br />
+										</h2>
+										<p class="about-me__p1">
+											The ability to meet tasks & tickets deadlines on a monthly
+											and per project performance review.
+											<br /><br />Working as part of a team I will display
+											confidence in reporting any important issues directly to
+											the Senior management.<br /><br />
+											If a task requires management approval, supervision or
+											intervention.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--===== SKILLS =====-->
+			<section class="skills container" id="skills">
+				<div class="skills__outer-background">
+					<div class="skills__content">
+						<div>
+							<h2 class="skills__title"><strong>Skills</strong></h2>
+						</div>
+						<h2 class="skills__subtitle">
+							<strong>
+								The languages, frameworks, libraries and tools I use to
+								create</strong
+							>
+						</h2>
+						<div>
+							<p class="skills__p">
+								<br />
+								My main Front-end, Backend and Creative software's I have
+								knowledge using. <br />
+								However I want to learn and develop new software to increase my
+								skill set.<br />
+							</p>
+							<p class="skills__p">
+								<br />
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Voluptates placeat voluptas veritatis quod voluptatum veniam
+								aspernatur accusamus repudiandae distinctio, mollitia reiciendis
+								neque quasi, porro numquam nisi facere corrupti assumenda
+								eveniet?<br />
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--===== CONTACT =====-->
+			<section class="contact container" id="contact">
+				<div class="contact-me__background-display">
+					<div class="contact-me__content-display">
+						<div class="contact-me__top-section">
+							<div>
+								<h2 class="contact-me__title">
+									<strong>Let's get in touch</strong>
+								</h2>
+							</div>
+							<p class="contact-me__subtitle">
+								I can't wait to be of service and hear from you.
+							</p>
+						</div>
+						<div class="contact-me__main-section row">
+							<div class="contact-me__leftside col">
+								<div class="contact-me__content">
+									<div>
+										<h2 class="contact-me__h">
+											<strong>Send me an Email</strong>
+										</h2>
+									</div>
+									<form id="contact-me-form">
+										<div class="contact-input__top row">
+											<div class="contact-input__info col">
+												<input
+													type="text"
+													id="firstName"
+													placeholder="First Name"
+													required
+												/>
+											</div>
+											<div class="contact-input__info col">
+												<input
+													type="text"
+													id="surname"
+													placeholder=" Surname"
+													required
+												/>
+											</div>
+											<div class="contact-input__info col">
+												<input
+													type="text"
+													id="emailAddress"
+													placeholder="Email Address"
+													required
+												/>
+											</div>
+											<div class="contact-input__info col">
+												<input
+													type="text"
+													id="companyName"
+													placeholder="Company Name"
+													required
+												/>
+											</div>
+										</div>
+										<div class="contact-input__bottom">
+											<div class="contact-input__info-bottom">
+												<textarea
+													id="messageTextbox"
+													type="text"
+													placeholder="Message"
+													required
+												></textarea>
+											</div>
+											<div class="contact-input__info-bottom">
+												<input
+													type="submit"
+													id="send-message-btn"
+													value="Send Message"
+													class="send-message__button"
+												/>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="contact-me__rightside col">
+								<div class="contact-me__content">
+									<div>
+										<h2 class="contact-me__h"><strong>Info</strong></h2>
+									</div>
+									<div class="contact__box">
+										<div class="contact-me__text">
+											<div>
+												<h2 class="contact-me__h1">
+													<strong>Location</strong>
+												</h2>
+											</div>
+											<p class="contact-me__p">
+												The Oldway Center, Swansea, Wales
+											</p>
+										</div>
+									</div>
+									<div class="contact__box">
+										<div class="contact-me__text">
+											<div>
+												<h2 class="contact-me__h1"><strong>Email</strong></h2>
+											</div>
+											<p class="contact-me__p">toddowenmpeli@rocketmail.com</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--===== FOOTER =====-->
+			<footer class="footer container-fluid">
+				<div class="footer__background container">
+					<div class="footer__container row">
+						<div class="footer__content1 col">
+							<div class="footer__sections">
+								<h2 class="footer__h">Portfolio</h2>
+								<h2 class="footer__h">Contact Me</h2>
+								<h2 class="footer__h">Projects</h2>
+							</div>
+						</div>
+						<div class="footer__content col">
+							<div>
+								<h2 class="footer__title"><strong> Todd Owen Mpeli</strong></h2>
+							</div>
+							<div>
+								<h2 class="footer__subtitle">
+									<span>Full-Stack Developer</span>
+								</h2>
+							</div>
+						</div>
+						<div class="footer__content2 col">
+							<div>
+								<ul class="footer__socials">
+									<li>
+										<a
+											href="https://www.linkedin.com/in/todd-owen-mpeli-831b18121/"
+											target="_blank"
+											><i class="uil uil-linkedin footer__icon"></i>
+											<h2 class="social-list__link">LinkedIn</h2></a
+										>
+									</li>
+									<li>
+										<a href="https://github.com/Todd-Owen-Mpeli" target="_blank"
+											><i class="uil uil-github footer__icon"></i>
+											<h2 class="social-list__link">GitHub</h2></a
+										>
+									</li>
+									<li>
+										<a href="https://twitter.com/ToddOwenMpeli" target="_blank"
+											><i class="uil uil-twitter footer__icon"></i>
+											<h2 class="social-list__link">Twitter</h2>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div>
+						<h2 class="footer__copyright">
+							&#169; 2021 copyright all right reserved
+						</h2>
+					</div>
+				</div>
+			</footer>
+		</main>
+
+		<!--=============== WEBSITE SCRIPTS ====================-->
+		<!--===== SCROLL REVEAL =====-->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+			integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+
+		<!--===== MAIN JS =====-->
+		<!-- Main Javascript -->
+		<script src="/src/js/app.js"></script>
+
+		<!-- Bootstrap JavaScript -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

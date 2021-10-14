@@ -1,0 +1,23 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap");
+
+// Font Stack Properties
+$fontStyle_header: "Bebas Neue", cursive;
+$fontStyle_body: "Rubik", sans-serif;
+$fontStyle_option1: "Heebo", cursive;
+$fontStyle_option2: "Fjalla One", sans-serif;
+$fontStyle_option3: "Assistant", sans-serif;
+
+// Font Sizes
+$fontSize_small: 0.9rem;
+$fontSize_normal: 1rem;
+$fontSize_large: 1.5rem;
+$fontSize_large-0: 2rem;
+$fontSize_large-1: 2.5rem;
+$fontSize_XL-large: 5rem;
+$fontSize_BG-large: 12rem;
+$fontSize_darkModeBtn: 1.75rem;
