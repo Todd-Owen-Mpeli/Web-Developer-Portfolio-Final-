@@ -53,11 +53,15 @@ p {
 
 /*============================== DARK MODE THEME ==============================*/
 .darkModeON {
-	background: $backgroundGradient;
-	background-size: 1200% 600%;
-	background-position: center;
-	background-repeat: no-repeat;
-	animation: GradientKeyframes 20s ease-in-out infinite;
+	background: $backgroundColor_black;
+
+	#darkMode {
+		background: $backgroundGradient;
+		background-size: 1200% 600%;
+		background-position: center;
+		background-repeat: no-repeat;
+		animation: GradientKeyframes 20s ease-in-out infinite;
+	}
 
 	/*======  NAVIGATION MENU  ======*/
 	header {
@@ -99,7 +103,7 @@ p {
 		margin-bottom: 5rem;
 
 		.heroBackground {
-			border-radius: 5px;
+			border-radius: 5px 5px 0 0;
 
 			.heroOuterBackground {
 				box-shadow: $box-shadow-0;
@@ -108,26 +112,26 @@ p {
 					.heroLeftside {
 						background: $backgroundColor_lightBlack;
 						h2 {
-							color: $AdditionalColor-lightGrey2;
+							color: $secondary_whiteDouble2;
 						}
 
 						.subtitle {
-							color: $AdditionalColor-lightGrey2;
+							color: $secondary_whiteDouble2;
 						}
 
 						p {
-							color: $AdditionalColor-lightGrey2;
+							color: $secondary_whiteDouble2;
 						}
 					}
 					.heroRightside {
 						background: $backgroundColor_lightBlack;
 
 						h2 {
-							color: $AdditionalColor-lightGrey2;
+							color: $secondary_whiteDouble2;
 						}
 
 						p {
-							color: $AdditionalColor-lightGrey2;
+							color: $secondary_whiteDouble2;
 						}
 					}
 				}
@@ -142,11 +146,12 @@ p {
 
 	/*====== TOP SECTION ======*/
 	.topSection {
+		border-radius: 15px;
 		background: $backgroundColor_lightBlack;
 
 		.outerSection {
 			h2 {
-				color: $baseColor_white;
+				color: $secondary_whiteDouble2;
 			}
 		}
 
@@ -156,12 +161,12 @@ p {
 				#cc h2,
 				#header1,
 				#paraph1 {
-					color: $baseColor_white;
+					color: $secondary_whiteDouble2;
 				}
 
 				#cc p,
 				#paraph1 {
-					color: $baseColor_white;
+					color: $secondary_whiteDouble2;
 				}
 			}
 		}
@@ -399,8 +404,7 @@ header {
 .topSection {
 	padding: 1rem;
 	text-align: center;
-	margin-bottom: 5rem;
-	background: transparent;
+	background: backgroundColor_White;
 
 	.outerSection {
 		h2 {
@@ -465,5 +469,252 @@ header {
 				background-color: $AdditionalColor_Purple1;
 			}
 		}
+	}
+}
+
+/* ===== PROJECTS =====*/
+.projects {
+	padding: 1.5rem;
+	color: $baseColor_black;
+
+	.projects__content {
+		border-radius: 5px;
+		box-shadow: var(--box-shadow-6);
+
+		.mainside_project-container {
+			padding: 2rem;
+
+			.projects__title {
+				text-align: left;
+				font-family: $fontStyle_option1;
+				font-size: $fontSize_large-1;
+				padding: 0rem;
+			}
+
+			.recommended__title {
+				text-align: left;
+				padding: 0rem;
+				padding-top: 1rem;
+				font-family: $fontStyle_body;
+				font-size: $fontSize_large;
+			}
+
+			.recommended-projects__section {
+				margin: 2rem 0rem;
+				grid-gap: 1.35vw;
+				grid-template-areas: recommendedProjects;
+			}
+
+			.recommended-projects {
+				padding: 0rem;
+				text-align: center;
+			}
+
+			.coverPicture {
+				height: 100%;
+				width: 100%;
+			}
+
+			.recommended-projects__image {
+				transition: all 0.25s ease-in-out;
+				transform: scale(1);
+				box-shadow: $box-shadow-1;
+			}
+
+			.recommended-projects__image:hover {
+				transition: all 0.25s ease-in-out;
+				transform: scale(1.005);
+				box-shadow: var(--box-shadow-3);
+			}
+
+			.recommended-projects__discription {
+				height: fit-content;
+				margin-top: 1.5rem;
+				padding: 1rem;
+				padding-right: 0rem;
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: 1fr;
+			}
+
+			.recommended-projects__titles {
+				text-align: left;
+				align-items: center;
+				font-family: $fontStyle_body;
+			}
+
+			.recommended-projects__h {
+				padding: 0rem;
+				text-align: left;
+				font-family: $fontStyle_option1;
+				font-size: $fontSize_large;
+			}
+
+			.recommended-projects__p {
+				text-align: left;
+				font-size: $fontSize_normal;
+				margin-top: 0.25vw;
+				color: var(--color-lightblueGrey);
+			}
+
+			.recommended-projects__buttons {
+				justify-self: end;
+			}
+
+			.more-info__background {
+				transform: scale(1);
+				border-radius: 5px;
+				padding: 0.65rem 0.75rem;
+				font-family: $fontStyle_body;
+				color: $baseColor_white;
+				font-size: $fontSize_normal;
+				background-color: $AdditionalColor_Purple1;
+				box-shadow: var(--box-shadow-5);
+			}
+
+			.more-info__background:hover {
+				transition: all 0.25s ease-in-out;
+				transform: scale(1.005);
+				background-color: var(--color-pinkRed);
+				box-shadow: var(--box-shadow-4);
+			}
+
+			/* ===== PROJECTS BOTTOM SECTION=====*/
+			/* Featured Projects */
+			.featuredProjects {
+				margin-top: 0rem;
+			}
+
+			.featuredProjects__title {
+				text-align: left;
+				font-weight: 600;
+				font-family: $fontStyle_body;
+				font-size: $fontSize_large;
+			}
+
+			.bi {
+				font-size: $fontSize_normal;
+			}
+
+			/* ===== FEATURED PROJECTS SECTION =====*/
+			.outerContainer {
+				margin-top: 1rem;
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-template-rows: 1fr;
+				grid-template-areas: "notificationDisplay";
+			}
+
+			.revealPageN {
+				padding-top: 0.5rem;
+				padding-left: 0.5rem;
+				position: relative;
+				grid-area: notificationDisplay;
+			}
+
+			.info_containerN {
+				display: none;
+				grid-area: notificationDisplay;
+			}
+
+			.contentN {
+				padding-top: 1rem;
+				padding: 2rem;
+				border-radius: 10px;
+				align-items: center;
+				justify-content: center;
+				background: linear-gradient(-45deg, #743afa, #9d73ff, #ff0055, #fd2f74);
+				background-size: 1200% 600%;
+				animation: background-colour_switch 10s ease-in-out infinite;
+			}
+
+			/* Featured Projects background colour change */
+			@keyframes background-colour_switch {
+				0% {
+					background-position: 0 50%;
+				}
+				50% {
+					background-position: 100% 50%;
+				}
+				100% {
+					background-position: 0 50%;
+				}
+			}
+
+			.contentN h2 {
+				font-family: $fontStyle_body;
+				padding: 0rem;
+			}
+
+			.buttonN {
+				border: none;
+				cursor: pointer;
+				padding: 0.75rem;
+				border-radius: 10px;
+				font-size: $fontSize_small;
+				color: $baseColor_white;
+				background-color: $AdditionalColor_Purple1;
+			}
+
+			.top-games__display {
+				margin-top: 4rem;
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				grid-column: 1.5rem;
+				grid-row-gap: 1.5vw;
+			}
+
+			.games__image {
+				transition: all 0.25s ease-in-out;
+				transform: scale(1);
+				text-align: center;
+				background-color: $secondary_Purple;
+				box-shadow: $box-shadow-1;
+			}
+
+			.games__image:hover {
+				transition: all 0.25s ease-in-out;
+				transform: scale(1.05);
+				background-color: $secondary_Purple;
+				box-shadow: $box-shadow-6;
+			}
+
+			.games__description {
+				height: fit-content;
+				margin-top: 2.5vw;
+				padding-left: 0.5rem;
+			}
+
+			.games {
+				text-align: left;
+				align-items: center;
+				color: $baseColor_white;
+			}
+
+			.featuredProjects__header {
+				text-align: left;
+				width: fit-content;
+				font-weight: 600;
+				word-spacing: 0.1rem;
+				letter-spacing: 0.045rem;
+				color: $secondary_whiteDouble;
+				font-family: $fontStyle_body;
+				font-size: $fontSize_large;
+			}
+
+			.projects__p {
+				text-align: left;
+				margin-top: 0.35vw;
+				color: $secondary_whiteDouble;
+				letter-spacing: 0.04rem;
+				font-family: $fontStyle_body;
+				font-size: $fontSize_normal;
+			}
+		}
+	}
+
+	.projects__content:hover {
+		transition: all 0.25s ease-in-out;
+		box-shadow: $box-shadow-6;
 	}
 }

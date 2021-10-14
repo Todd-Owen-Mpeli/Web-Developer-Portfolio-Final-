@@ -12,11 +12,13 @@ const darkModeBtn = document.getElementById("darkModeBtn");
 
 // Sets New Dark Mode Background colour
 function darkModeBackground() {
-	const darkM = document.getElementById("darkMode");
-	const darkModeBody = document.getElementById("main");
+	const darkM = document.getElementById("main");
+	const darkModetopSection = document.getElementById("main");
 
 	// Toggle ON/OFF the dark Mode theme
 	darkM.classList.toggle("darkModeON");
+	document.getElementById("heroBackgroundImage").style.backgroundImage =
+		"url('/src/img/HeroBackground2.png')";
 
 	// Chicks to see if the website dark theme Mode is active
 	if (darkM.classList.contains("darkModeON")) {
@@ -24,13 +26,13 @@ function darkModeBackground() {
 		darkModeBtn.innerHTML = `
 	            <i class="bi bi-toggle-on"></i>
 	        `;
-		darkModeBody.style.backgroundColor = "#111";
+		// darkModeBody.style.backgroundColor = "#111";
 	} else {
 		// Remove the dark theme button
 		darkModeBtn.innerHTML = `
 	            <i class="bi bi-toggle-off"></i>
 	        `;
-		darkModeBody.style.backgroundColor = "#fff";
+		// darkModeBody.style.backgroundColor = "#fff";
 	}
 }
 
@@ -47,7 +49,7 @@ function heroBackgroundTwo() {
 	secondHeroBackground.style.backgroundRepeat = "no-repeat";
 }
 
-/*============================== DISPLAY RESIZE SECTION ==============================*/
+/*============================== TOP SECTION DISPLAY RESIZE SECTION ==============================*/
 function resizeDiv() {
 	const displayStyles = document.getElementById("outerSection");
 
@@ -112,4 +114,34 @@ function pageThree() {
 submitBtn.addEventListener("click", () => {
 	resizeDiv();
 	pageTwo();
+});
+
+/*============================== PROJECTS SECTION ==============================*/
+
+/*===== NOTIFICATION DISPLAY =====*/
+function featuredProjectsDisplay() {
+	const showDisplay = document.getElementById("info_containerN");
+	const displayStyles = document.getElementById("contentN");
+	const plusBtn = document.getElementById("featuredProjectsBtn");
+
+	// Changing Div styles
+	if (showDisplay.style.display === "none") {
+		showDisplay.style.display = "block";
+		displayStyles.style.color = "#fff";
+		displayStyles.style.minHeight = "5.5rem";
+		plusBtn.style.backgroundColor = "#ff0055";
+
+		// More Featured Projects Button
+		plusBtn.innerHTML = `<i class="bi bi-dash-lg"></i>`;
+	} else {
+		showDisplay.style.display = "none";
+		displayStyles.style.color = "#111";
+		plusBtn.style.backgroundColor = "#9d73ff";
+		// More Featured Projects Button
+		plusBtn.innerHTML = `<i class="bi bi-plus-lg"></i>`;
+	}
+}
+
+featuredProjectsBtn.addEventListener("click", () => {
+	featuredProjectsDisplay();
 });
