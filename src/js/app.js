@@ -49,7 +49,7 @@ function heroBackgroundTwo() {
 
 /*============================== DISPLAY RESIZE SECTION ==============================*/
 function resizeDiv() {
-	const displayStyles = document.getElementById("outer_container");
+	const displayStyles = document.getElementById("outerSection");
 
 	// Changing Div Element
 	displayStyles.style.transition = "1.25s";

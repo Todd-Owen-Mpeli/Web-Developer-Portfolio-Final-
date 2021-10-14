@@ -77,7 +77,7 @@ p {
 			.navMenu {
 				button {
 					.bi {
-						color: $baseColor_white;
+						color: $secondary_whiteDouble;
 					}
 				}
 
@@ -103,6 +103,34 @@ p {
 
 			.heroOuterBackground {
 				box-shadow: $box-shadow-0;
+
+				.heroInnerIackground {
+					.heroLeftside {
+						background: $backgroundColor_lightBlack;
+						h2 {
+							color: $AdditionalColor-lightGrey2;
+						}
+
+						.subtitle {
+							color: $AdditionalColor-lightGrey2;
+						}
+
+						p {
+							color: $AdditionalColor-lightGrey2;
+						}
+					}
+					.heroRightside {
+						background: $backgroundColor_lightBlack;
+
+						h2 {
+							color: $AdditionalColor-lightGrey2;
+						}
+
+						p {
+							color: $AdditionalColor-lightGrey2;
+						}
+					}
+				}
 			}
 
 			.heroOuterBackground:hover {
@@ -112,11 +140,8 @@ p {
 		}
 	}
 
-	/*============================== TOP SECTION ==============================*/
-	/* Top Section */
+	/*====== TOP SECTION ======*/
 	.topSection {
-		padding: 1rem 2rem;
-		border: #8a59fd 0.25rem solid;
 		background: $backgroundColor_lightBlack;
 
 		.outerSection {
@@ -127,14 +152,7 @@ p {
 
 		/* Content Section */
 		.infoSection {
-			background: $backgroundColor_lightBlack;
-
 			.content {
-				padding: 1rem;
-				margin-top: 2rem;
-				align-items: center;
-				justify-content: center;
-
 				#cc h2,
 				#header1,
 				#paraph1 {
@@ -260,6 +278,7 @@ header {
 					box-shadow: $box-shadow-1;
 
 					h2 {
+						letter-spacing: 0.05rem;
 						font-family: $fontStyle_header;
 						font-size: $fontSize_large-0;
 					}
@@ -290,6 +309,7 @@ header {
 					background-color: $backgroundColor_White;
 
 					h2 {
+						letter-spacing: 0.075rem;
 						font-family: $fontStyle_header;
 						font-size: $fontSize_large;
 					}
@@ -376,7 +396,6 @@ header {
 }
 
 /*============================== TOP SECTION ==============================*/
-/* Top Section */
 .topSection {
 	padding: 1rem;
 	text-align: center;
@@ -385,6 +404,7 @@ header {
 
 	.outerSection {
 		h2 {
+			word-spacing: 0.25rem;
 			color: $baseColor_black;
 			font-size: $fontSize_large-1;
 			font-family: $fontStyle_header;
