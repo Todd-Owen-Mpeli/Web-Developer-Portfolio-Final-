@@ -1,14 +1,19 @@
-/*===== WEBSITE SCROLL REVEAL =====*/
+/*=================================== WEBSITE SCROLL REVEAL ==============================*/
 // 	AOS CDN.js Reveal Animation
 AOS.init();
 
-/*==================== DARK LIGHT THEME ====================*/
+/*============================== VARIABLES ==============================*/
+// Texts Displayed
+const submitBtn = document.getElementById("submit");
+const featuredProjectsBtn = document.getElementById("featuredProjectsBtn");
+
+/*=================================== DARK MODE ===================================*/
 const darkModeBtn = document.getElementById("darkModeBtn");
 
-/*===== GRADIENT BACKGROUND COLOUR  =====*/
 // Sets New Dark Mode Background colour
 function darkModeBackground() {
 	const darkM = document.getElementById("darkMode");
+	const darkModeBody = document.getElementById("main");
 
 	// Toggle ON/OFF the dark Mode theme
 	darkM.classList.toggle("darkModeON");
@@ -19,15 +24,17 @@ function darkModeBackground() {
 		darkModeBtn.innerHTML = `
 	            <i class="bi bi-toggle-on"></i>
 	        `;
+		darkModeBody.style.backgroundColor = "#111";
 	} else {
 		// Remove the dark theme button
 		darkModeBtn.innerHTML = `
 	            <i class="bi bi-toggle-off"></i>
 	        `;
+		darkModeBody.style.backgroundColor = "#fff";
 	}
 }
 
-/*===== HERO BACKGROUND IMAGE  =====*/
+/*============================== HERO BACKGROUND IMAGE ==============================*/
 // Sets New Hero Background Image
 function heroBackgroundTwo() {
 	const secondHeroBackground = document.getElementById("heroBackgroundImage");
@@ -39,3 +46,70 @@ function heroBackgroundTwo() {
 	secondHeroBackground.style.backgroundPosition = "center";
 	secondHeroBackground.style.backgroundRepeat = "no-repeat";
 }
+
+/*============================== DISPLAY RESIZE SECTION ==============================*/
+function resizeDiv() {
+	const displayStyles = document.getElementById("outer_container");
+
+	// Changing Div Element
+	displayStyles.style.transition = "1.25s";
+	displayStyles.style.color = "#fff";
+	displayStyles.style.backgroundColor = "#ff0055";
+	displayStyles.style.padding = "1.5rem";
+}
+
+/*===== NEXT PAGE NEW TEXT =====*/
+// Page Display two
+function pageTwo() {
+	submitBtn.innerText = "Page 3";
+	// document.getElementsByClassName("header1").style.transition = "5s";
+
+	const cc = document.getElementById("cc").remove();
+
+	const header1 = (document.getElementById("header1").innerHTML = `
+                <h2><strong> Future features </strong></h2>
+            `);
+	const paraph1 = (document.getElementById("paraph1").innerHTML = `
+                <p><br /> These are the features I want to implement.
+							<br />
+							<br />
+							1. User can share the result of a quiz on social media.<br />
+							2. Add multiple quizzes to the application. User can select which
+							one to take.<br />
+							3. User can create an account and have all the scores saved in his
+							dashboard
+							<br /> </p>
+            `);
+
+	//load's third page
+	submitBtn.addEventListener("click", () => {
+		pageThree();
+	});
+}
+
+// Page Display three
+function pageThree() {
+	submitBtn.innerText = "Page 1";
+	// const title1 = document.getElementById("questionnaire_title").remove();
+
+	const header1 = (document.getElementById("header1").innerHTML = `
+                <h2><strong> Real-World Applications </strong></h2>
+            `);
+	const paraph1 = (document.getElementById("paraph1").innerHTML = `
+                <p><br /> 1. User Feedback<br />
+							2. Targeted Surveys<br />
+							3. Scalable questionnaire<br />
+							4. Cost-Effective Data Collection </p>
+            `);
+
+	// Reload's the default page
+	submitBtn.addEventListener("click", () => {
+		window.location.reload();
+	});
+}
+
+// Submit Button Listener
+submitBtn.addEventListener("click", () => {
+	resizeDiv();
+	pageTwo();
+});
