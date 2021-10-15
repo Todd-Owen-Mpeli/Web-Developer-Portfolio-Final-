@@ -547,10 +547,10 @@ header {
 							}
 						}
 
-						.recommended-projects__buttons {
+						.buttons {
 							justify-self: end;
 
-							.more-info__background {
+							.more-info {
 								border-radius: 5px;
 								padding: 0.65rem 0.75rem;
 								color: $baseColor_white;
@@ -560,7 +560,7 @@ header {
 								box-shadow: $box-shadow-5;
 							}
 
-							.more-info__background:hover {
+							.more-info:hover {
 								transition: all 0.25s ease-in-out;
 								background-color: $AdditionalColor-darkPurple2;
 								box-shadow: $box-shadow-4;
@@ -616,7 +616,7 @@ header {
 					display: none;
 					grid-area: notificationDisplay;
 
-					.contentN {
+					.content {
 						padding-top: 1rem;
 						padding: 2rem;
 						border-radius: 10px;
@@ -633,7 +633,7 @@ header {
 							padding: 0rem;
 						}
 
-						.top-games__display {
+						.moreProjects {
 							margin-top: 4rem;
 							display: grid;
 							grid-template-columns: repeat(4, 1fr);
@@ -645,27 +645,27 @@ header {
 								align-items: center;
 								color: $baseColor_white;
 
-								.games__image {
+								.image {
 									transition: all 0.25s ease-in-out;
 									transform: scale(1);
 									text-align: center;
 									background-color: $secondary_Purple;
 									box-shadow: $box-shadow-1;
 
-									.coverPicture {
+									img {
 										height: 100%;
 										width: 100%;
 									}
 								}
 
-								.games__image:hover {
+								.image:hover {
 									transition: all 0.25s ease-in-out;
 									transform: scale(1.05);
 									background-color: $secondary_Purple;
 									box-shadow: $box-shadow-6;
 								}
 
-								.games__description {
+								.description {
 									height: fit-content;
 									margin-top: 2.5vw;
 									padding-left: 0.5rem;
@@ -687,7 +687,7 @@ header {
 										color: $secondary_whiteDouble;
 										letter-spacing: 0.04rem;
 										font-family: $fontStyle_body;
-										font-size: $fontSize_small;
+										font-size: $fontSize_xSmall;
 									}
 								}
 							}

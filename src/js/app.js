@@ -123,7 +123,7 @@ submitBtn.addEventListener("click", () => {
 /*===== NOTIFICATION DISPLAY =====*/
 function featuredProjectsDisplay() {
 	const showDisplay = document.getElementById("info_containerN");
-	const displayStyles = document.getElementById("contentN");
+	const displayStyles = document.getElementById("content");
 	const plusBtn = document.getElementById("featuredProjectsBtn");
 
 	// Changing Div styles
