@@ -146,8 +146,8 @@ function featuredProjectsDisplay() {
 		moreApp1.style.transition = "all 2s";
 		moreApp1.style.opacity = "0.5";
 		moreApp2.style.opacity = "0.5";
-		moreApp3.style.opacity = "0.5";
-		moreApp4.style.opacity = "0.5";
+		moreApp3.style.opacity = "1";
+		moreApp4.style.opacity = "1";
 	} else {
 		showDisplay.style.display = "none";
 		displayStyles.style.color = "#111";
