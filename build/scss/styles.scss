@@ -634,11 +634,9 @@ header {
 						}
 
 						.moreProjects {
-							margin-top: 4rem;
-							display: grid;
-							grid-template-columns: repeat(4, 1fr);
-							grid-column: 1.5rem;
-							grid-row-gap: 1.5vw;
+							margin-top: 2rem;
+							display: flex;
+							justify-content: space-between;
 
 							.apps {
 								text-align: left;

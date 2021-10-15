@@ -120,11 +120,17 @@ submitBtn.addEventListener("click", () => {
 
 /*============================== PROJECTS SECTION ==============================*/
 
-/*===== NOTIFICATION DISPLAY =====*/
+/*===== FEATURED SECTION DISPLAY =====*/
 function featuredProjectsDisplay() {
 	const showDisplay = document.getElementById("info_containerN");
 	const displayStyles = document.getElementById("content");
 	const plusBtn = document.getElementById("featuredProjectsBtn");
+
+	// More Projects Section
+	const moreApp1 = document.getElementById("moreApp1");
+	const moreApp2 = document.getElementById("moreApp2");
+	const moreApp3 = document.getElementById("moreApp3");
+	const moreApp4 = document.getElementById("moreApp4");
 
 	// Changing Div styles
 	if (showDisplay.style.display === "none") {
@@ -135,6 +141,13 @@ function featuredProjectsDisplay() {
 
 		// More Featured Projects Button
 		plusBtn.innerHTML = `<i class="bi bi-dash-lg"></i>`;
+
+		// More Featured Projects Apps
+		moreApp1.style.transition = "all 2s";
+		moreApp1.style.opacity = "0.5";
+		moreApp2.style.opacity = "0.5";
+		moreApp3.style.opacity = "0.5";
+		moreApp4.style.opacity = "0.5";
 	} else {
 		showDisplay.style.display = "none";
 		displayStyles.style.color = "#111";
