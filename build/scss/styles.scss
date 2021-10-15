@@ -640,7 +640,7 @@ header {
 							grid-column: 1.5rem;
 							grid-row-gap: 1.5vw;
 
-							.games {
+							.apps {
 								text-align: left;
 								align-items: center;
 								color: $baseColor_white;
@@ -660,7 +660,7 @@ header {
 
 								.image:hover {
 									transition: all 0.25s ease-in-out;
-									transform: scale(1.05);
+									transform: scale(1.0075);
 									background-color: $secondary_Purple;
 									box-shadow: $box-shadow-6;
 								}
