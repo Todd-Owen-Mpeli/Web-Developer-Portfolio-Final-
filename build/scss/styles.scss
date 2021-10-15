@@ -146,7 +146,7 @@ p {
 
 	/*====== TOP SECTION ======*/
 	.topSection {
-		border-radius: 15px;
+		border-radius: 5px;
 		background: $backgroundColor_lightBlack;
 
 		.outerSection {
@@ -167,6 +167,83 @@ p {
 				#cc p,
 				#paraph1 {
 					color: $secondary_whiteDouble2;
+				}
+			}
+		}
+	}
+
+	/*====== TOP SECTION ======*/
+	.projects {
+		color: $baseColor_white;
+		background-color: $backgroundColor_black;
+
+		.content {
+			background-color: $backgroundColor_lightBlack;
+
+			.mainside {
+				h2 {
+					color: $secondary_whiteDouble2;
+				}
+
+				.subtitle {
+					color: $secondary_whiteDouble2;
+				}
+
+				.recommendedProjects {
+					.project {
+						.description {
+							.titles {
+								h2 {
+									color: $secondary_whiteDouble2;
+								}
+
+								p {
+									color: $AdditionalColor-lightGrey;
+								}
+							}
+						}
+					}
+				}
+
+				/* ===== PROJECTS BOTTOM SECTION=====*/
+				/* Featured Projects */
+				.featuredProjects {
+					h2 {
+						color: $secondary_whiteDouble2;
+					}
+				}
+
+				/* ===== FEATURED PROJECTS SECTION =====*/
+				.outerContainer {
+					.revealPageN {
+						.buttonN {
+							color: $secondary_whiteDouble2;
+						}
+					}
+
+					.info_containerN {
+						.content {
+							h2 {
+								color: $secondary_whiteDouble2;
+							}
+
+							.moreProjects {
+								.apps {
+									color: $secondary_whiteDouble2;
+
+									.description {
+										h2 {
+											color: $secondary_whiteDouble2;
+										}
+
+										p {
+											color: $secondary_whiteDouble2;
+										}
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -471,20 +548,21 @@ header {
 		}
 	}
 }
-
-/* ===== PROJECTS =====*/
+/*============================== PROJECTS ==============================*/
 .projects {
-	padding: 1.5rem;
+	padding: 1.5rem 0;
 	margin-bottom: 5rem;
 	color: $baseColor_black;
+	border: #fbb040 0.25rem solid;
 	background-color: $backgroundColor_lightBlack;
 
-	.projects__content {
+	.content {
 		border-radius: 5px;
 		box-shadow: $box-shadow-5;
 		background-color: $backgroundColor_White;
+		border: #fbb040 0.25rem solid;
 
-		.mainside_project-container {
+		.mainside {
 			padding: 2rem;
 
 			h2 {
@@ -500,11 +578,11 @@ header {
 				font-size: $fontSize_normal;
 			}
 
-			.recommended-projects__section {
+			.recommendedProjects {
 				margin: 2rem 0;
 				grid-template-areas: recommendedProjects;
 
-				.recommended-projects {
+				.project {
 					text-align: left;
 
 					.image {
