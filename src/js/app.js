@@ -13,22 +13,24 @@ const darkModeBtn = document.getElementById("darkModeBtn");
 // Sets New Dark Mode Background colour
 function darkModeBackground() {
 	const darkM = document.getElementById("main");
-	const darkModetopSection = document.getElementById("main");
+	const darkMHeroImage = document.getElementById("heroBackgroundImage");
 
 	// Toggle ON/OFF the dark Mode theme
 	darkM.classList.toggle("darkModeON");
-	document.getElementById("heroBackgroundImage").style.backgroundImage =
-		"url('/src/img/HeroBackground2.png')";
+	darkMHeroImage.style.transition = "all 2s";
+	darkMHeroImage.style.backgroundImage = "url('/src/img/HeroBackground2.png')";
 
 	// Chicks to see if the website dark theme Mode is active
 	if (darkM.classList.contains("darkModeON")) {
 		// Remove the dark theme button
+		darkModeBtn.style.transition = "all 2s";
 		darkModeBtn.innerHTML = `
 	            <i class="bi bi-toggle-on"></i>
 	        `;
 		// darkModeBody.style.backgroundColor = "#111";
 	} else {
 		// Remove the dark theme button
+		darkModeBtn.style.transition = "all 2s";
 		darkModeBtn.innerHTML = `
 	            <i class="bi bi-toggle-off"></i>
 	        `;

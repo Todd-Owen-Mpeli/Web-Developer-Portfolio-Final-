@@ -336,7 +336,7 @@ header {
 							border-radius: 5px;
 							text-decoration: none;
 							color: $baseColor_white;
-							font-size: $fontSize_normal;
+							font-size: $fontSize_small;
 							font-family: $fontStyle_option1;
 							background-color: $AdditionalColor_Purple1;
 							box-shadow: $box-shadow-5;
@@ -484,116 +484,110 @@ header {
 		.mainside_project-container {
 			padding: 2rem;
 
-			.projects__title {
+			h2 {
 				text-align: left;
 				font-family: $fontStyle_option1;
-				font-size: $fontSize_large-1;
-				padding: 0rem;
+				font-size: $fontSize_large;
 			}
 
 			.recommended__title {
 				text-align: left;
-				padding: 0rem;
 				padding-top: 1rem;
 				font-family: $fontStyle_body;
-				font-size: $fontSize_large;
+				font-size: $fontSize_normal;
 			}
 
 			.recommended-projects__section {
 				margin: 2rem 0rem;
 				grid-gap: 1.35vw;
 				grid-template-areas: recommendedProjects;
-			}
 
-			.recommended-projects {
-				padding: 0rem;
-				text-align: center;
-			}
+				.recommended-projects {
+					padding: 0rem;
+					text-align: center;
 
-			.coverPicture {
-				height: 100%;
-				width: 100%;
-			}
+					.recommended-projects__image {
+						transition: all 0.25s ease-in-out;
+						transform: scale(1);
+						box-shadow: $box-shadow-1;
 
-			.recommended-projects__image {
-				transition: all 0.25s ease-in-out;
-				transform: scale(1);
-				box-shadow: $box-shadow-1;
-			}
+						.coverPicture {
+							height: 100%;
+							width: 100%;
+						}
+					}
 
-			.recommended-projects__image:hover {
-				transition: all 0.25s ease-in-out;
-				transform: scale(1.005);
-				box-shadow: var(--box-shadow-3);
-			}
+					.recommended-projects__image:hover {
+						transition: all 0.25s ease-in-out;
+						transform: scale(1.005);
+						box-shadow: var(--box-shadow-3);
+					}
 
-			.recommended-projects__discription {
-				height: fit-content;
-				margin-top: 1.5rem;
-				padding: 1rem;
-				padding-right: 0rem;
-				display: grid;
-				grid-template-columns: repeat(2, 1fr);
-				grid-template-rows: 1fr;
-			}
+					.recommended-projects__discription {
+						height: fit-content;
+						margin-top: 1.5rem;
+						padding: 1rem;
+						padding-right: 0rem;
+						display: grid;
+						grid-template-columns: repeat(2, 1fr);
+						grid-template-rows: 1fr;
 
-			.recommended-projects__titles {
-				text-align: left;
-				align-items: center;
-				font-family: $fontStyle_body;
-			}
+						.recommended-projects__titles {
+							text-align: left;
+							align-items: center;
+							font-family: $fontStyle_body;
 
-			.recommended-projects__h {
-				padding: 0rem;
-				text-align: left;
-				font-family: $fontStyle_option1;
-				font-size: $fontSize_large;
-			}
+							.recommended-projects__h {
+								padding: 0rem;
+								text-align: left;
+								font-family: $fontStyle_option1;
+								font-size: $fontSize_normal;
+							}
 
-			.recommended-projects__p {
-				text-align: left;
-				font-size: $fontSize_normal;
-				margin-top: 0.25vw;
-				color: var(--color-lightblueGrey);
-			}
+							.recommended-projects__p {
+								text-align: left;
+								font-size: $fontSize_small;
+								margin-top: 0.25vw;
+								color: var(--color-lightblueGrey);
+							}
+						}
 
-			.recommended-projects__buttons {
-				justify-self: end;
-			}
+						.recommended-projects__buttons {
+							justify-self: end;
 
-			.more-info__background {
-				transform: scale(1);
-				border-radius: 5px;
-				padding: 0.65rem 0.75rem;
-				font-family: $fontStyle_body;
-				color: $baseColor_white;
-				font-size: $fontSize_normal;
-				background-color: $AdditionalColor_Purple1;
-				box-shadow: var(--box-shadow-5);
-			}
+							.more-info__background {
+								transform: scale(1);
+								border-radius: 5px;
+								padding: 0.65rem 0.75rem;
+								font-family: $fontStyle_body;
+								color: $baseColor_white;
+								font-size: $fontSize_normal;
+								background-color: $AdditionalColor_Purple1;
+								box-shadow: var(--box-shadow-5);
+							}
 
-			.more-info__background:hover {
-				transition: all 0.25s ease-in-out;
-				transform: scale(1.005);
-				background-color: var(--color-pinkRed);
-				box-shadow: var(--box-shadow-4);
+							.more-info__background:hover {
+								transition: all 0.25s ease-in-out;
+								transform: scale(1.005);
+								background-color: var(--color-pinkRed);
+								box-shadow: var(--box-shadow-4);
+							}
+						}
+					}
+				}
 			}
 
 			/* ===== PROJECTS BOTTOM SECTION=====*/
 			/* Featured Projects */
 			.featuredProjects {
 				margin-top: 0rem;
-			}
 
-			.featuredProjects__title {
-				text-align: left;
-				font-weight: 600;
-				font-family: $fontStyle_body;
-				font-size: $fontSize_large;
-			}
-
-			.bi {
-				font-size: $fontSize_normal;
+				h2 {
+					text-align: left;
+					font-weight: 600;
+					font-family: $fontStyle_body;
+					font-size: $fontSize_normal;
+				}
 			}
 
 			/* ===== FEATURED PROJECTS SECTION =====*/
@@ -603,112 +597,128 @@ header {
 				grid-template-columns: 1fr;
 				grid-template-rows: 1fr;
 				grid-template-areas: "notificationDisplay";
-			}
 
-			.revealPageN {
-				padding-top: 0.5rem;
-				padding-left: 0.5rem;
-				position: relative;
-				grid-area: notificationDisplay;
-			}
+				.revealPageN {
+					padding-top: 0.5rem;
+					padding-left: 0.5rem;
+					position: relative;
+					grid-area: notificationDisplay;
 
-			.info_containerN {
-				display: none;
-				grid-area: notificationDisplay;
-			}
+					.buttonN {
+						border: none;
+						cursor: pointer;
+						padding: 0.75rem;
+						border-radius: 10px;
+						font-size: $fontSize_small;
+						color: $baseColor_white;
+						background-color: $AdditionalColor_Purple1;
 
-			.contentN {
-				padding-top: 1rem;
-				padding: 2rem;
-				border-radius: 10px;
-				align-items: center;
-				justify-content: center;
-				background: linear-gradient(-45deg, #743afa, #9d73ff, #ff0055, #fd2f74);
-				background-size: 1200% 600%;
-				animation: background-colour_switch 10s ease-in-out infinite;
-			}
-
-			/* Featured Projects background colour change */
-			@keyframes background-colour_switch {
-				0% {
-					background-position: 0 50%;
+						/* Reveal Button Icon for Featured Projects */
+						.bi {
+							font-size: $fontSize_normal;
+						}
+					}
 				}
-				50% {
-					background-position: 100% 50%;
+
+				.info_containerN {
+					display: none;
+					grid-area: notificationDisplay;
+
+					.contentN {
+						padding-top: 1rem;
+						padding: 2rem;
+						border-radius: 10px;
+						align-items: center;
+						justify-content: center;
+						background: linear-gradient(
+							-45deg,
+							#743afa,
+							#9d73ff,
+							#ff0055,
+							#fd2f74
+						);
+						background-size: 1200% 600%;
+						animation: background-colour_switch 10s ease-in-out infinite;
+
+						h2 {
+							font-family: $fontStyle_body;
+							padding: 0rem;
+						}
+
+						/* Featured Projects background colour change */
+						@keyframes background-colour_switch {
+							0% {
+								background-position: 0 50%;
+							}
+							50% {
+								background-position: 100% 50%;
+							}
+							100% {
+								background-position: 0 50%;
+							}
+						}
+
+						.top-games__display {
+							margin-top: 4rem;
+							display: grid;
+							grid-template-columns: repeat(4, 1fr);
+							grid-column: 1.5rem;
+							grid-row-gap: 1.5vw;
+
+							.games {
+								text-align: left;
+								align-items: center;
+								color: $baseColor_white;
+
+								.games__image {
+									transition: all 0.25s ease-in-out;
+									transform: scale(1);
+									text-align: center;
+									background-color: $secondary_Purple;
+									box-shadow: $box-shadow-1;
+
+									.coverPicture {
+										height: 100%;
+										width: 100%;
+									}
+								}
+
+								.games__image:hover {
+									transition: all 0.25s ease-in-out;
+									transform: scale(1.05);
+									background-color: $secondary_Purple;
+									box-shadow: $box-shadow-6;
+								}
+
+								.games__description {
+									height: fit-content;
+									margin-top: 2.5vw;
+									padding-left: 0.5rem;
+
+									h2 {
+										text-align: left;
+										width: fit-content;
+										font-weight: 600;
+										word-spacing: 0.1rem;
+										letter-spacing: 0.045rem;
+										color: $secondary_whiteDouble;
+										font-family: $fontStyle_body;
+										font-size: $fontSize_normal;
+									}
+
+									p {
+										text-align: left;
+										margin-top: 0.35vw;
+										color: $secondary_whiteDouble;
+										letter-spacing: 0.04rem;
+										font-family: $fontStyle_body;
+										font-size: $fontSize_small;
+									}
+								}
+							}
+						}
+					}
 				}
-				100% {
-					background-position: 0 50%;
-				}
-			}
-
-			.contentN h2 {
-				font-family: $fontStyle_body;
-				padding: 0rem;
-			}
-
-			.buttonN {
-				border: none;
-				cursor: pointer;
-				padding: 0.75rem;
-				border-radius: 10px;
-				font-size: $fontSize_small;
-				color: $baseColor_white;
-				background-color: $AdditionalColor_Purple1;
-			}
-
-			.top-games__display {
-				margin-top: 4rem;
-				display: grid;
-				grid-template-columns: repeat(4, 1fr);
-				grid-column: 1.5rem;
-				grid-row-gap: 1.5vw;
-			}
-
-			.games__image {
-				transition: all 0.25s ease-in-out;
-				transform: scale(1);
-				text-align: center;
-				background-color: $secondary_Purple;
-				box-shadow: $box-shadow-1;
-			}
-
-			.games__image:hover {
-				transition: all 0.25s ease-in-out;
-				transform: scale(1.05);
-				background-color: $secondary_Purple;
-				box-shadow: $box-shadow-6;
-			}
-
-			.games__description {
-				height: fit-content;
-				margin-top: 2.5vw;
-				padding-left: 0.5rem;
-			}
-
-			.games {
-				text-align: left;
-				align-items: center;
-				color: $baseColor_white;
-			}
-
-			.featuredProjects__header {
-				text-align: left;
-				width: fit-content;
-				font-weight: 600;
-				word-spacing: 0.1rem;
-				letter-spacing: 0.045rem;
-				color: $secondary_whiteDouble;
-				font-family: $fontStyle_body;
-				font-size: $fontSize_large;
-			}
-
-			.projects__p {
-				text-align: left;
-				margin-top: 0.35vw;
-				color: $secondary_whiteDouble;
-				letter-spacing: 0.04rem;
-				font-family: $fontStyle_body;
-				font-size: $fontSize_normal;
 			}
 		}
 	}
