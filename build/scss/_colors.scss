@@ -35,7 +35,7 @@ $backgroundGradient: linear-gradient(
 	#ff9900
 );
 
-/* Featured Projects background colour change */
+/* TOP Navigation section background colour change */
 @keyframes GradientKeyframes {
 	0% {
 		background-position: 0 50%;
@@ -47,3 +47,12 @@ $backgroundGradient: linear-gradient(
 		background-position: 0 50%;
 	}
 }
+
+/* Featured Projects background colour change */
+$FeaturedProjectsGradient: linear-gradient(
+	-45deg,
+	#743afa,
+	#9d73ff,
+	#ff0055,
+	#fd2f74
+);
