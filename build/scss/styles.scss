@@ -247,6 +247,70 @@ p {
 			}
 		}
 	}
+
+	/* ===== ABOUT =====*/
+	.aboutMe {
+		background-color: $backgroundColor_black;
+
+		.backgroundDisplay {
+			.backgroundCircle {
+				.circle {
+					background-color: $AdditionalColor-darkPurple;
+				}
+
+				.circle:hover {
+					background-image: linear-gradient(to bottom right, #5d18ff, #5d18ff);
+				}
+			}
+
+			.outerDisplay {
+				background-color: $backgroundColor_lightBlack;
+
+				.outerDisplayBackground {
+					.about-me__profile-picture {
+						display: none;
+					}
+
+					.about-me__content {
+						.innerContent {
+							h2 {
+								letter-spacing: 0.07rem;
+								color: $secondary_whiteDouble2;
+							}
+
+							p {
+								color: $AdditionalColor-lightGrey;
+							}
+						}
+
+						.innerContent1 {
+							.hobbies {
+								h2 {
+									letter-spacing: 0.07rem;
+									color: $AdditionalColor-lightGrey;
+								}
+
+								p {
+									color: $AdditionalColor-lightGrey;
+								}
+							}
+
+							.activities {
+								h2 {
+									letter-spacing: 0.07rem;
+									color: $AdditionalColor-lightGrey;
+								}
+
+								p {
+									color: $AdditionalColor-lightGrey;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 /*============================== NAVIGATION MENU ==============================*/
@@ -776,11 +840,9 @@ header {
 	}
 }
 
-/*============================== PROJECTS ==============================*/
-
-/* ===== ABOUT =====*/
+/*============================== ABOUT ==============================*/
 .aboutMe {
-	padding: 2vw;
+	padding: 2rem;
 	margin: 2rem 0rem;
 	font-family: $fontStyle_option1;
 	font-size: $fontSize_normal;
@@ -915,8 +977,8 @@ header {
 									grid-area: xbox-overlap;
 									align-self: start;
 									justify-self: center;
-									height: 12vw;
-									width: 12vw;
+									height: 12rem;
+									width: 12rem;
 									border-radius: 50%;
 									display: inline-block;
 									background-image: linear-gradient(
@@ -941,8 +1003,8 @@ header {
 									align-self: end;
 									justify-self: center;
 									margin-top: 3rem;
-									height: 10vw;
-									width: 18vw;
+									height: 10rem;
+									width: 18rem;
 								}
 							}
 						}
@@ -988,8 +1050,8 @@ header {
 									grid-area: xbox-overlap;
 									align-self: start;
 									justify-self: center;
-									height: 12vw;
-									width: 12vw;
+									height: 12rem;
+									width: 12rem;
 									border-radius: 50%;
 									display: inline-block;
 									background-image: linear-gradient(
@@ -1010,8 +1072,8 @@ header {
 
 								.clipboardImage {
 									grid-area: xbox-overlap;
-									width: 15vw;
-									height: 12vw;
+									width: 15rem;
+									height: 12rem;
 									align-self: end;
 									margin-top: 2rem;
 									position: relative;
