@@ -183,7 +183,7 @@ p {
 		}
 	}
 
-	/*====== TOP SECTION ======*/
+	/*====== PROJECTS ======*/
 	.projects {
 		color: $baseColor_white;
 		background-color: $backgroundColor_black;
@@ -1479,4 +1479,432 @@ header {
 		transition: all 0.5s ease-in-out;
 		box-shadow: $box-shadow-6;
 	}
+}
+
+/* Small - Large mobile screen (portrait 576px) // Change to (max-device-width: 320px) when finished */
+@media screen and (max-width: 576px) {
+	/*======  NAVIGATION MENU  ======*/
+	header {
+		padding: 0.5rem;
+
+		.nav {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			/* Left div title section */
+			.navTitle {
+				width: fit-content;
+
+				a {
+					letter-spacing: 0.1rem;
+					text-decoration: none;
+					color: $baseColor_black;
+					font-size: $fontSize_large;
+					font-family: $fontStyle_header;
+				}
+
+				a:hover {
+					transition: all 0.25s ease-in-out;
+					color: $AdditionalColor_darkPurple;
+				}
+			}
+
+			/* Right links section */
+			.navMenu {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				margin-top: 15px;
+				justify-content: space-between;
+				border: #5d18ff 0.25rem solid;
+
+				button {
+					border: none;
+					list-style: none;
+					background: none;
+					margin-right: 1rem;
+
+					.bi {
+						color: $baseColor_black;
+						font-size: $fontSize_darkModeBtn;
+					}
+				}
+
+				li {
+					padding: 0 20px;
+					align-self: center;
+
+					a {
+						text-decoration: none;
+						color: $baseColor_black;
+						font-size: $fontSize_normal;
+						font-family: $fontStyle_option1;
+
+						.uil {
+							display: none;
+							padding: 7.5px;
+						}
+					}
+
+					a:hover {
+						transition: all 0.25s ease-in-out;
+						color: $AdditionalColor_darkPurple;
+					}
+				}
+			}
+
+			/* Mobile Menu Home Button */
+			.mobileHomebtn {
+				display: block;
+
+				button {
+					border: none;
+					list-style: none;
+					background: none;
+					color: $baseColor_black;
+					font-size: $fontSize_darkModeBtn;
+				}
+			}
+		}
+	}
+
+	/*====== HERO ======*/
+	.hero {
+		margin-bottom: 2.5rem;
+
+		.heroBackground {
+			background: url(/src/img/HeroBackground3.png);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+
+			.heroOuterBackground {
+				.heroInnerIackground {
+					display: flex;
+					flex-direction: column;
+					grid-row-gap: 2rem;
+
+					.heroLeftside {
+						width: fit-content;
+					}
+
+					.heroRightside {
+						.socialmMediaLinks {
+							a {
+								font-size: $fontSize_large-0;
+							}
+						}
+					}
+				}
+			}
+
+			.profileImageBackground {
+				display: none;
+			}
+		}
+	}
+
+	/*====== PROJECTS ======*/
+	.projects {
+		background-color: $backgroundColor_lightBlack;
+
+		.content {
+			background-color: $backgroundColor_White;
+
+			.mainside {
+				.recommendedProjects {
+					display: flex;
+					grid-row-gap: 2rem;
+					flex-direction: column;
+				}
+
+				/* ===== FEATURED PROJECTS SECTION =====*/
+				.outerContainer {
+					.info_containerN {
+						.content {
+							.moreProjects {
+								display: flex;
+								flex-direction: column;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.projects__content:hover {
+			transition: all 0.25s ease-in-out;
+			box-shadow: $box-shadow-6;
+		}
+	}
+
+	/* ===== ABOUT =====*/
+	.aboutMe {
+		padding: 2rem;
+		margin: 2rem 0rem;
+		font-family: $fontStyle_option1;
+		font-size: $fontSize_normal;
+		background-color: $backgroundColor_White;
+
+		.backgroundDisplay {
+			display: grid;
+			grid-template-columns: minmax(1fr, auto);
+			grid-template-rows: minmax(1fr, auto);
+			grid-template-areas: "overlap";
+
+			.backgroundCircle {
+				display: none;
+
+				.circle {
+					display: none;
+				}
+			}
+
+			.outerDisplay {
+				grid-area: overlap;
+				align-self: center;
+				justify-self: center;
+				text-align: center;
+				display: inline-block;
+				border-radius: 15px;
+				padding: 1rem;
+				background-color: $backgroundColor_White;
+				box-shadow: $box-shadow-1;
+
+				.outerDisplayBackground {
+					display: grid;
+					grid-template-columns: minmax(1fr, auto);
+					grid-template-rows: minmax(1fr, auto);
+					grid-template-areas: "profileOverlap";
+
+					.about-me__profile-picture {
+						display: none;
+					}
+
+					.about-me__content {
+						display: grid;
+						margin-bottom: 2rem;
+						grid-template-columns: minmax(1fr, auto);
+						grid-template-rows: minmax(1fr, auto);
+						grid-area: profileOverlap;
+
+						.innerContent {
+							padding: 1rem;
+							text-align: center;
+							margin-bottom: 4rem;
+
+							h2 {
+								color: $baseColor_black;
+								font-size: $fontSize_large-1;
+								font-family: $fontStyle_header;
+							}
+
+							p {
+								color: $baseColor_black;
+								font-size: $fontSize_normal;
+							}
+						}
+
+						.innerContent1 {
+							display: grid;
+							grid-template-columns: repeat(2, 1fr);
+							grid-template-rows: 1fr;
+							grid-template-areas: "HobbiesActivities";
+							grid-column-gap: 25rem;
+							grid-row-gap: 1.5rem;
+							padding: 1rem;
+
+							.hobbies {
+								padding: 1rem;
+								align-self: start;
+								justify-self: center;
+								border-radius: 25px;
+								-webkit-backdrop-filter: blur(10px);
+								backdrop-filter: blur(30px);
+								box-shadow: $box-shadow-1;
+
+								h2 {
+									color: $baseColor_black;
+									font-size: $fontSize_large;
+									font-family: $fontStyle_header;
+								}
+
+								p {
+									color: $baseColor_black;
+									font-size: $fontSize_small;
+								}
+
+								h2,
+								p {
+									margin-top: 1rem;
+								}
+
+								.imageOverlay {
+									display: grid;
+									text-align: center;
+									grid-template-columns: minmax(1fr, auto);
+									grid-template-rows: minmax(1fr, auto);
+									grid-template-areas: "xbox-overlap";
+
+									.HobbiesCircle {
+										grid-area: xbox-overlap;
+										align-self: start;
+										justify-self: center;
+										height: 12rem;
+										width: 12rem;
+										border-radius: 50%;
+										display: inline-block;
+										background-image: linear-gradient(
+											to bottom right,
+											#9d73ff,
+											#743afa
+										);
+									}
+
+									.HobbiesCircle:hover {
+										transition: all 1s ease-in-out;
+										background-image: linear-gradient(
+											to bottom right,
+											#ff0055,
+											#ff00c8
+										);
+									}
+
+									.xboxImage {
+										grid-area: xbox-overlap;
+										position: relative;
+										align-self: end;
+										justify-self: center;
+										margin-top: 3rem;
+										height: 10rem;
+										width: 18rem;
+									}
+								}
+							}
+
+							.hobbies:hover {
+								transition: all 0.25s ease-in-out;
+								backdrop-filter: blur(100px);
+							}
+
+							.activities {
+								padding: 1rem;
+								align-self: start;
+								justify-self: center;
+								border-radius: 25px;
+								-webkit-backdrop-filter: blur(10px);
+								backdrop-filter: blur(30px);
+								box-shadow: $box-shadow-1;
+
+								h2,
+								p {
+									margin-top: 1rem;
+								}
+
+								h2 {
+									color: $baseColor_black;
+									font-size: $fontSize_large;
+									font-family: $fontStyle_header;
+								}
+
+								p {
+									color: $baseColor_black;
+									font-size: $fontSize_small;
+								}
+
+								.imageOverlay {
+									display: grid;
+									text-align: center;
+									grid-template-columns: minmax(1fr, auto);
+									grid-template-rows: minmax(1fr, auto);
+									grid-template-areas: "xbox-overlap";
+
+									.HobbiesCircle {
+										grid-area: xbox-overlap;
+										align-self: start;
+										justify-self: center;
+										height: 12rem;
+										width: 12rem;
+										border-radius: 50%;
+										display: inline-block;
+										background-image: linear-gradient(
+											to bottom right,
+											#9d73ff,
+											#743afa
+										);
+									}
+
+									.HobbiesCircle:hover {
+										transition: all 1s ease-in-out;
+										background-image: linear-gradient(
+											to bottom right,
+											#ff0055,
+											#ff00c8
+										);
+									}
+
+									.clipboardImage {
+										grid-area: xbox-overlap;
+										width: 15rem;
+										height: 12rem;
+										align-self: end;
+										margin-top: 2rem;
+										position: relative;
+										justify-self: center;
+									}
+								}
+							}
+
+							.activities:hover {
+								transition: all 0.25s ease-in-out;
+								backdrop-filter: blur(100px);
+							}
+						}
+					}
+				}
+			}
+
+			.outerDisplay:hover {
+				transition: all 0.25s ease-in-out;
+				box-shadow: var(--box-shadow-2);
+				border: $baseColor_black 0.25rem solid;
+			}
+		}
+	}
+
+	/* ===== SKILLS =====*/
+	.skills {
+		padding: 1rem;
+		margin: 0rem;
+		background-color: $AdditionalColor-darkOrange;
+	}
+
+	/* ===== CONTACT ME =====*/
+	.contactUs {
+		padding: 0rem;
+		margin: 0rem;
+		padding-bottom: 1.5rem;
+		background-color: $backgroundColor_lightBlack;
+
+		.socials {
+			display: none;
+		}
+
+		.contacBox {
+			width: 100%;
+			height: 100%;
+			border-radius: 0px;
+			box-shadow: none;
+			box-sizing: border-box;
+
+			h2 {
+				text-align: center;
+			}
+		}
+
+		.map {
+			display: none;
+		}
+	}
+	/* ===== FOOTER =====*/
 }
