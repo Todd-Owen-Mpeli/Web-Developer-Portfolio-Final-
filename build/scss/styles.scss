@@ -2166,30 +2166,19 @@ header {
 
 	/*====== HERO ======*/
 	.hero {
-		margin-bottom: 2.5rem;
+		margin-bottom: 5rem;
 
 		.heroBackground {
-			background: url(/src/img/HeroBackground3.png);
-			background-size: cover;
-			background-position: center;
-			background-repeat: no-repeat;
-
 			.heroOuterBackground {
+				display: grid;
+				position: relative;
+				box-shadow: $box-shadow-5;
+
 				.heroInnerIackground {
-					display: flex;
-					flex-direction: column;
-					grid-row-gap: 2rem;
+					grid-column-gap: 5rem;
 
 					.heroLeftside {
-						width: fit-content;
-					}
-
-					.heroRightside {
-						.socialmMediaLinks {
-							a {
-								font-size: $fontSize_large-0;
-							}
-						}
+						padding: 1.5rem;
 					}
 				}
 			}
@@ -2288,13 +2277,6 @@ header {
 		}
 	}
 
-	/* ===== SKILLS =====*/
-	.skills {
-		padding: 1rem;
-		margin: 0rem;
-		background-color: $AdditionalColor-darkOrange;
-	}
-
 	/* ===== CONTACT ME =====*/
 	.contactUs {
 		.map {
@@ -2302,88 +2284,6 @@ header {
 				height: 34rem;
 				width: 40vw;
 			}
-		}
-	}
-
-	/* ===== FOOTER =====*/
-	.footer {
-		padding: 1rem;
-
-		.background {
-			box-shadow: $box-shadow-5;
-
-			.container {
-				display: flex;
-				flex-direction: column;
-
-				.content {
-					display: flex;
-					flex-direction: column;
-
-					a {
-						text-align: center;
-					}
-				}
-
-				.title {
-					padding: 1rem;
-					display: flex;
-					align-items: center;
-					flex-direction: column;
-
-					a {
-						text-align: center;
-						letter-spacing: 0.1rem;
-						text-decoration: none;
-						font-size: $fontSize_large;
-						color: $secondary_whiteDouble2;
-						font-family: $fontStyle_header;
-					}
-
-					a:hover {
-						transition: all 0.25s ease-in-out;
-						color: $AdditionalColor-darkOrange;
-					}
-
-					h5 {
-						text-align: center;
-						text-transform: capitalize;
-						font-size: $fontSize_normal;
-						font-family: $fontStyle_option2;
-						color: $secondary_Purple;
-					}
-				}
-
-				.socials {
-					padding: 1rem;
-					display: flex;
-					list-style: none;
-					justify-content: center;
-
-					a {
-						margin: auto;
-						text-decoration: none;
-						color: $baseColor_white;
-						font-size: $fontSize_large;
-						font-family: $fontStyle_body;
-					}
-
-					a:hover {
-						transition: all 0.25s ease-in-out;
-						color: $AdditionalColor-darkOrange;
-					}
-				}
-			}
-
-			.copyright {
-				h2 {
-					text-align: center;
-				}
-			}
-		}
-
-		.background:hover {
-			box-shadow: $box-shadow-0;
 		}
 	}
 }
