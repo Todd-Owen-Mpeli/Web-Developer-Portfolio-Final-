@@ -119,7 +119,7 @@ p {
 						}
 
 						p {
-							color: $secondary_whiteDouble2;
+							color: $AdditionalColor-lightGrey;
 						}
 					}
 					.heroRightside {
@@ -130,7 +130,19 @@ p {
 						}
 
 						p {
-							color: $secondary_whiteDouble2;
+							color: $AdditionalColor-lightGrey;
+						}
+
+						.socialmMediaLinks {
+							a {
+								font-size: $fontSize_large;
+								color: $AdditionalColor-lightGrey;
+							}
+
+							a:hover {
+								transition: all 0.25s ease-in-out;
+								color: $secondary_pinkRed;
+							}
 						}
 					}
 				}
@@ -165,7 +177,7 @@ p {
 
 				#cc p,
 				#paraph1 {
-					color: $secondary_whiteDouble2;
+					color: $AdditionalColor-lightGrey;
 				}
 			}
 		}
@@ -287,7 +299,7 @@ p {
 							.hobbies {
 								h2 {
 									letter-spacing: 0.07rem;
-									color: $AdditionalColor-lightGrey;
+									color: $secondary_whiteDouble2;
 								}
 
 								p {
@@ -298,7 +310,7 @@ p {
 							.activities {
 								h2 {
 									letter-spacing: 0.07rem;
-									color: $AdditionalColor-lightGrey;
+									color: $secondary_whiteDouble2;
 								}
 
 								p {
@@ -307,6 +319,29 @@ p {
 							}
 						}
 					}
+				}
+			}
+		}
+	}
+
+	/* ===== SKILLS =====*/
+	.skills {
+		background-color: $backgroundColor_black;
+
+		.outerBackground {
+			background-color: $backgroundColor_lightBlack;
+
+			.content {
+				h2 {
+					color: $secondary_whiteDouble2;
+				}
+
+				h5 {
+					color: $AdditionalColor-lightGrey;
+				}
+
+				p {
+					color: $AdditionalColor-lightGrey;
 				}
 			}
 		}
@@ -418,6 +453,7 @@ header {
 					width: 25rem;
 					padding: 2rem;
 					text-align: left;
+					position: relative;
 					border-radius: 5px;
 					background-color: $backgroundColor_White;
 					box-shadow: $box-shadow-1;
@@ -449,6 +485,7 @@ header {
 					padding: 1rem 2rem;
 					text-align: center;
 					border-radius: 5px;
+					position: relative;
 					align-items: center;
 					box-shadow: $box-shadow-1;
 					background-color: $backgroundColor_White;
@@ -1099,59 +1136,53 @@ header {
 	}
 }
 
-/* ===== SKILLS =====*/
+/*============================== SKILLS ==============================*/
 .skills {
-	padding: 2vw;
-	margin: 2rem 0rem;
-	color: $baseColor_black;
-	font-family: $fontStyle_option1;
-	font-size: $fontSize_normal;
-	background-color: $backgroundColor_lightBlack;
-}
-
-.skills__outer-background {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-	grid-template-areas: "skills-overlay";
-	box-shadow: $box-shadow-5;
-}
-
-.skills__outer-background:hover {
-	transition: all 0.5s ease-in-out;
-	box-shadow: $box-shadow-6;
-}
-
-.skills__content {
 	padding: 2rem;
-	text-align: center;
-	position: relative;
-	grid-area: skills-overlay;
-	background-color: $backgroundColor_White;
-}
+	margin: 2rem 0rem;
+	background-color: $backgroundColor_lightBlack;
 
-.skills__title {
-	padding: 0rem;
-	margin-bottom: 2rem;
-	font-family: $fontStyle_option1;
-	font-size: $fontSize_large-1;
-}
+	.outerBackground {
+		display: grid;
+		border-radius: 5px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: "skills-overlay";
+		box-shadow: $box-shadow-5;
+		background-color: $backgroundColor_White;
 
-.skills__p,
-.skills__title,
-.skills__subtitle {
-	padding: 0rem;
-}
+		.content {
+			padding: 2rem;
+			text-align: center;
+			position: relative;
+			grid-area: skills-overlay;
 
-.skills__subtitle {
-	margin-bottom: 1.5rem;
-	font-family: $fontStyle_option1;
-	font-size: $fontSize_large;
-}
+			h2 {
+				margin-bottom: 2rem;
+				color: $baseColor_black;
+				font-family: $fontStyle_header;
+				font-size: $fontSize_large-1;
+			}
 
-.skills__p {
-	font-family: $fontStyle_body;
-	font-size: $fontSize_normal;
+			h5 {
+				margin-bottom: 1.5rem;
+				color: $baseColor_black;
+				font-family: $fontStyle_option1;
+				font-size: $fontSize_normal;
+			}
+
+			p {
+				color: $baseColor_black;
+				font-family: $fontStyle_body;
+				font-size: $fontSize_normal;
+			}
+		}
+	}
+
+	.outerBackground:hover {
+		transition: all 0.5s ease-in-out;
+		box-shadow: $box-shadow-6;
+	}
 }
 
 /* ===== CONTACT ME =====*/
