@@ -346,6 +346,29 @@ p {
 			}
 		}
 	}
+
+	/* ===== CONTACT ME =====*/
+	.contactUs {
+		border-radius: 5px;
+		background-color: $backgroundColor_lightBlack;
+
+		.contacBox {
+			background-color: $backgroundColor_black;
+		}
+	}
+
+	/* ===== FOOTER =====*/
+	.footer {
+		background: $backgroundGradient;
+		background-size: 1200% 600%;
+		background-position: center;
+		background-repeat: no-repeat;
+		animation: GradientKeyframes 20s ease-in-out infinite;
+
+		.background {
+			background-color: $baseColor_black;
+		}
+	}
 }
 
 /*============================== NAVIGATION MENU =============================*/
@@ -1188,8 +1211,9 @@ header {
 /*============================== CONTACT ME ==================================*/
 .contactUs {
 	margin: auto;
-	padding: 3rem;
+	padding: 2rem;
 	display: flex;
+	margin-bottom: 2rem;
 	align-items: center;
 	justify-content: center;
 	background-color: $backgroundColor_White;
@@ -1228,7 +1252,7 @@ header {
 		flex-direction: column;
 		justify-content: center;
 		box-shadow: $box-shadow-7;
-		background-color: $backgroundColor_black;
+		background-color: $backgroundColor_lightBlack;
 
 		.c-heading {
 			padding: 1rem;
