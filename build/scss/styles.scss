@@ -348,7 +348,7 @@ p {
 	}
 }
 
-/*============================== NAVIGATION MENU ==============================*/
+/*============================== NAVIGATION MENU =============================*/
 header {
 	padding: 0.5rem;
 
@@ -423,7 +423,7 @@ header {
 	}
 }
 
-/*============================== HERO ==============================*/
+/*============================== HERO ========================================*/
 .hero {
 	margin-bottom: 5rem;
 
@@ -577,7 +577,7 @@ header {
 	}
 }
 
-/*============================== TOP SECTION ==============================*/
+/*============================== TOP SECTION =================================*/
 .topSection {
 	padding: 1rem;
 	text-align: center;
@@ -649,7 +649,7 @@ header {
 	}
 }
 
-/*============================== PROJECTS ==============================*/
+/*============================== PROJECTS ====================================*/
 .projects {
 	padding: 1.5rem 0;
 	color: $baseColor_black;
@@ -877,7 +877,7 @@ header {
 	}
 }
 
-/*============================== ABOUT ==============================*/
+/*============================== ABOUT =======================================*/
 .aboutMe {
 	padding: 2rem;
 	margin: 2rem 0rem;
@@ -1136,7 +1136,7 @@ header {
 	}
 }
 
-/*============================== SKILLS ==============================*/
+/*============================== SKILLS ======================================*/
 .skills {
 	padding: 2rem;
 	margin: 2rem 0rem;
@@ -1185,176 +1185,171 @@ header {
 	}
 }
 
-/* ===== CONTACT ME =====*/
-.contact {
-	padding: 2vw;
-	margin: 2rem 0rem;
-	color: $baseColor_black;
-	font-family: $fontStyle_option1;
-	font-size: $fontSize_normal;
+/*============================== CONTACT ME ==================================*/
+.contactUs {
+	margin: auto;
+	padding: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: $backgroundColor_White;
+
+	.socials {
+		border-radius: 15px 0 0 15px;
+		background-color: $secondary_whiteDouble;
+		box-shadow: $box-shadow-7;
+
+		li {
+			display: flex;
+			list-style: none;
+			width: fit-content;
+			align-items: center;
+			flex-direction: column;
+			justify-content: center;
+
+			a {
+				padding: 20px;
+				color: $baseColor_lightBlack;
+				font-size: $fontSize_large;
+			}
+
+			a:hover {
+				transition: all 0.25s ease-in-out;
+				color: $secondary_Purple;
+			}
+		}
+	}
+
+	.contacBox {
+		padding: 1rem;
+		display: flex;
+		border-radius: 5px;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		box-shadow: $box-shadow-7;
+		background-color: $backgroundColor_black;
+
+		.c-heading {
+			padding: 1rem;
+
+			h2 {
+				margin: auto;
+				padding: 1rem;
+				text-align: left;
+				color: $baseColor_white;
+				font-size: $fontSize_large-1;
+				font-family: $fontStyle_header;
+			}
+
+			p {
+				text-align: center;
+				font-size: $fontSize_small;
+				font-family: $fontStyle_body;
+				color: $AdditionalColor-lightGrey;
+			}
+		}
+
+		.c-inputs {
+			form {
+				margin: 0;
+				display: grid;
+				justify-content: center;
+				align-items: center;
+				grid-template-columns: 1fr;
+
+				input {
+					width: 250px;
+					height: 45px;
+					border: none;
+					outline: none;
+					display: flex;
+					padding: 0.5rem;
+					border-radius: 5px;
+					margin-top: 1rem;
+					box-sizing: border-box;
+					color: $baseColor_black;
+					font-size: $fontSize_small;
+					font-family: $fontStyle_body;
+					background-color: transparent;
+					border: $AdditionalColor-lightGrey 0.15rem solid;
+				}
+
+				input:focus {
+					transition: all 0.25s ease-in-out;
+					border: $AdditionalColor-darkPurple2 0.15rem solid;
+				}
+
+				::placeholder {
+					font-size: $fontSize_small;
+					color: $AdditionalColor-lightGrey;
+				}
+
+				::-ms-input-placeholder {
+					font-size: $fontSize_small;
+					color: $AdditionalColor-lightGrey;
+				}
+
+				textarea {
+					padding: 0.5rem;
+					margin-top: 1rem;
+					border-radius: 5px;
+					box-sizing: border-box;
+					color: $baseColor_black;
+					width: 250px !important;
+					height: 200px !important;
+					font-family: $fontStyle_body;
+					background-color: transparent;
+					border: $AdditionalColor-lightGrey 0.15rem solid;
+				}
+
+				textarea:focus {
+					transition: all 0.25s ease-in-out;
+					border: none;
+					border: $AdditionalColor-darkPurple2 0.15rem solid;
+				}
+
+				button {
+					border: none;
+					outline: none;
+					width: 150px;
+					margin-top: 2rem;
+					font-weight: 300;
+					border-radius: 5px;
+					padding: 0.5rem 2rem;
+					justify-self: center;
+					letter-spacing: 0.05rem;
+					color: $baseColor_white;
+					justify-self: center;
+					font-size: $fontSize_normal;
+					font-family: $fontStyle_header;
+					background: $secondary_Purple;
+				}
+
+				button:hover {
+					transition: all 0.25s ease-in-out;
+					background: $AdditionalColor-darkPurple;
+				}
+
+				button:active {
+					transform: scale(1.01);
+				}
+			}
+		}
+	}
+
+	.map {
+		filter: grayscale(0.2);
+		box-shadow: $box-shadow-7;
+		border-radius: 0 5px 5px 0;
+		border: $baseColor_black 0.25rem solid;
+		border-left: none;
+	}
 }
 
-.contact-me__background-display {
-	text-align: center;
-	border-radius: 5px;
-	box-shadow: $box-shadow-5;
-	background: linear-gradient(-45deg, #743afa, #9d73ff, #ff0055, #fd2f74);
-	background-size: 1200% 600%;
-	animation: background-colour_switch 10s ease-in-out infinite;
-}
-
-.contact-me__background-display:hover {
-	transition: all 0.25s ease-in-out;
-	box-shadow: $box-shadow-6;
-}
-
-.contact-me__top-section {
-	padding: 2rem 0rem;
-}
-
-.contact-me__title {
-	color: $baseColor_white;
-	font-family: $fontStyle_option1;
-	font-size: $fontSize_large-1;
-}
-
-.contact-me__subtitle {
-	margin-top: 1vw;
-	font-size: $fontSize_large;
-	color: $baseColor_white;
-}
-
-.contact-me__main-section {
-	margin: 0rem;
-	padding: 2rem;
-	border-radius: 15px 15px 5px 5px;
-	background: url(/src/img/HeroBackground3.png);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.contact-me__main-section:hover {
-	transition: all 0.25s ease-in-out;
-	background: url(/src/img/HeroBackground3.png);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.contact-me__leftside {
-	align-self: center;
-	justify-self: center;
-}
-
-.contact-input__top {
-	display: grid;
-	align-self: center;
-	justify-self: center;
-	text-align: center;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 1fr;
-}
-
-.contact-input__info {
-	padding: 1vw;
-	text-align: left;
-}
-
-input {
-	padding: 0.75rem;
-	border-style: hidden;
-	font-family: $fontStyle_option1;
-	font-size: $fontSize_small;
-	color: $baseColor_lightBlack;
-	border-bottom: $AdditionalColor-lightGrey 0.05rem solid;
-}
-
-::placeholder {
-	color: $AdditionalColor-lightGrey;
-	font-size: $fontSize_small;
-}
-
-::-ms-input-placeholder {
-	color: $AdditionalColor-lightGrey;
-	font-size: $fontSize_small;
-}
-
-.contact-input__info-bottom {
-	padding: 0.75rem 0rem;
-}
-
-textarea {
-	padding: 0.5rem;
-	font-family: $fontStyle_option1;
-	color: $baseColor_lightBlack;
-	border: $AdditionalColor-lightGrey 0.15rem solid;
-}
-
-.send-message__button {
-	text-align: end;
-	text-decoration: none;
-	padding: 0.75rem;
-	border-radius: 5px;
-	transition: all 0.25s ease-in-out;
-	transform: scale(1);
-	word-spacing: 0.2rem;
-	letter-spacing: 0.025rem;
-	color: $baseColor_white;
-	font-size: $fontSize_normal;
-	background-color: $secondary_Purple;
-	box-shadow: $box-shadow-5;
-}
-
-.send-message__button:hover,
-.send-message__button:focus {
-	transition: all 0.25s ease-in-out;
-	transform: scale(1.0025);
-	background-color: $secondary_pinkRed;
-	box-shadow: $box-shadow-6;
-}
-
-.contact-me__rightside {
-	align-self: center;
-	justify-self: center;
-}
-
-.contact-me__content {
-	padding: 2rem;
-	border-radius: 5px;
-	align-self: center;
-	justify-self: center;
-	color: $baseColor_lightBlack;
-	background-color: $baseColor_white;
-	box-shadow: $box-shadow-5;
-}
-
-.contact-me__content:hover {
-	transition: all 0.25s ease-in-out;
-	box-shadow: $box-shadow-6;
-}
-
-.contact-me__h {
-	font-family: $fontStyle_option1;
-	font-size: $fontSize_large-1;
-	padding-bottom: 1rem;
-}
-
-.contact-me__h1 {
-	font-family: $fontStyle_option1;
-	font-size: $fontSize_large;
-	padding-top: 1rem;
-}
-
-.contact-me__p {
-	font-size: $fontSize_normal;
-	padding-top: 0.5rem;
-}
-
-/*===== FOOTER =====*/
+/*============================== FOOTER ======================================*/
 .footer {
-	padding: 2vw;
+	padding: 2rem;
 	color: $baseColor_black;
 	font-family: $fontStyle_option1;
 	font-size: $fontSize_normal;
