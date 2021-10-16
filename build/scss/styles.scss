@@ -1153,7 +1153,7 @@ header {
 
 		.outerDisplay:hover {
 			transition: all 0.25s ease-in-out;
-			box-shadow: var(--box-shadow-2);
+			box-shadow: $box-shadow-0;
 			border: $baseColor_black 0.25rem solid;
 		}
 	}
@@ -1640,18 +1640,10 @@ header {
 
 	/* ===== ABOUT =====*/
 	.aboutMe {
-		padding: 2rem;
-		margin: 2rem 0rem;
-		font-family: $fontStyle_option1;
-		font-size: $fontSize_normal;
-		background-color: $backgroundColor_White;
+		padding: 1rem;
+		margin: 0rem;
 
 		.backgroundDisplay {
-			display: grid;
-			grid-template-columns: minmax(1fr, auto);
-			grid-template-rows: minmax(1fr, auto);
-			grid-template-areas: "overlap";
-
 			.backgroundCircle {
 				display: none;
 
@@ -1661,203 +1653,31 @@ header {
 			}
 
 			.outerDisplay {
-				grid-area: overlap;
-				align-self: center;
-				justify-self: center;
-				text-align: center;
-				display: inline-block;
-				border-radius: 15px;
-				padding: 1rem;
-				background-color: $backgroundColor_White;
-				box-shadow: $box-shadow-1;
+				box-shadow: $box-shadow-0;
 
 				.outerDisplayBackground {
-					display: grid;
-					grid-template-columns: minmax(1fr, auto);
-					grid-template-rows: minmax(1fr, auto);
-					grid-template-areas: "profileOverlap";
-
 					.about-me__profile-picture {
 						display: none;
 					}
 
 					.about-me__content {
-						display: grid;
-						margin-bottom: 2rem;
-						grid-template-columns: minmax(1fr, auto);
-						grid-template-rows: minmax(1fr, auto);
-						grid-area: profileOverlap;
-
 						.innerContent {
-							padding: 1rem;
-							text-align: center;
-							margin-bottom: 4rem;
-
-							h2 {
-								color: $baseColor_black;
-								font-size: $fontSize_large-1;
-								font-family: $fontStyle_header;
-							}
-
-							p {
-								color: $baseColor_black;
-								font-size: $fontSize_normal;
-							}
+							margin-bottom: 2rem;
 						}
 
 						.innerContent1 {
-							display: grid;
-							grid-template-columns: repeat(2, 1fr);
-							grid-template-rows: 1fr;
-							grid-template-areas: "HobbiesActivities";
-							grid-column-gap: 25rem;
-							grid-row-gap: 1.5rem;
-							padding: 1rem;
+							display: flex;
+							flex-direction: column;
 
 							.hobbies {
-								padding: 1rem;
-								align-self: start;
-								justify-self: center;
-								border-radius: 25px;
-								-webkit-backdrop-filter: blur(10px);
-								backdrop-filter: blur(30px);
-								box-shadow: $box-shadow-1;
-
-								h2 {
-									color: $baseColor_black;
-									font-size: $fontSize_large;
-									font-family: $fontStyle_header;
-								}
-
-								p {
-									color: $baseColor_black;
-									font-size: $fontSize_small;
-								}
-
-								h2,
-								p {
-									margin-top: 1rem;
-								}
-
-								.imageOverlay {
-									display: grid;
-									text-align: center;
-									grid-template-columns: minmax(1fr, auto);
-									grid-template-rows: minmax(1fr, auto);
-									grid-template-areas: "xbox-overlap";
-
-									.HobbiesCircle {
-										grid-area: xbox-overlap;
-										align-self: start;
-										justify-self: center;
-										height: 12rem;
-										width: 12rem;
-										border-radius: 50%;
-										display: inline-block;
-										background-image: linear-gradient(
-											to bottom right,
-											#9d73ff,
-											#743afa
-										);
-									}
-
-									.HobbiesCircle:hover {
-										transition: all 1s ease-in-out;
-										background-image: linear-gradient(
-											to bottom right,
-											#ff0055,
-											#ff00c8
-										);
-									}
-
-									.xboxImage {
-										grid-area: xbox-overlap;
-										position: relative;
-										align-self: end;
-										justify-self: center;
-										margin-top: 3rem;
-										height: 10rem;
-										width: 18rem;
-									}
-								}
-							}
-
-							.hobbies:hover {
-								transition: all 0.25s ease-in-out;
-								backdrop-filter: blur(100px);
+								border-radius: 5px;
+								box-shadow: $box-shadow-0;
+								// border: $baseColor_black 0.15rem solid;
 							}
 
 							.activities {
-								padding: 1rem;
-								align-self: start;
-								justify-self: center;
-								border-radius: 25px;
-								-webkit-backdrop-filter: blur(10px);
-								backdrop-filter: blur(30px);
-								box-shadow: $box-shadow-1;
-
-								h2,
-								p {
-									margin-top: 1rem;
-								}
-
-								h2 {
-									color: $baseColor_black;
-									font-size: $fontSize_large;
-									font-family: $fontStyle_header;
-								}
-
-								p {
-									color: $baseColor_black;
-									font-size: $fontSize_small;
-								}
-
-								.imageOverlay {
-									display: grid;
-									text-align: center;
-									grid-template-columns: minmax(1fr, auto);
-									grid-template-rows: minmax(1fr, auto);
-									grid-template-areas: "xbox-overlap";
-
-									.HobbiesCircle {
-										grid-area: xbox-overlap;
-										align-self: start;
-										justify-self: center;
-										height: 12rem;
-										width: 12rem;
-										border-radius: 50%;
-										display: inline-block;
-										background-image: linear-gradient(
-											to bottom right,
-											#9d73ff,
-											#743afa
-										);
-									}
-
-									.HobbiesCircle:hover {
-										transition: all 1s ease-in-out;
-										background-image: linear-gradient(
-											to bottom right,
-											#ff0055,
-											#ff00c8
-										);
-									}
-
-									.clipboardImage {
-										grid-area: xbox-overlap;
-										width: 15rem;
-										height: 12rem;
-										align-self: end;
-										margin-top: 2rem;
-										position: relative;
-										justify-self: center;
-									}
-								}
-							}
-
-							.activities:hover {
-								transition: all 0.25s ease-in-out;
-								backdrop-filter: blur(100px);
+								border-radius: 5px;
+								box-shadow: $box-shadow-0;
 							}
 						}
 					}
@@ -1865,9 +1685,8 @@ header {
 			}
 
 			.outerDisplay:hover {
-				transition: all 0.25s ease-in-out;
-				box-shadow: var(--box-shadow-2);
-				border: $baseColor_black 0.25rem solid;
+				border: none;
+				box-shadow: $box-shadow-0;
 			}
 		}
 	}
@@ -1906,5 +1725,665 @@ header {
 			display: none;
 		}
 	}
+
 	/* ===== FOOTER =====*/
+	.footer {
+		padding: 1rem;
+
+		.background {
+			box-shadow: $box-shadow-5;
+
+			.container {
+				display: flex;
+				flex-direction: column;
+
+				.content {
+					display: flex;
+					flex-direction: column;
+
+					a {
+						text-align: center;
+					}
+				}
+
+				.title {
+					padding: 1rem;
+					display: flex;
+					align-items: center;
+					flex-direction: column;
+
+					a {
+						text-align: center;
+						letter-spacing: 0.1rem;
+						text-decoration: none;
+						font-size: $fontSize_large;
+						color: $secondary_whiteDouble2;
+						font-family: $fontStyle_header;
+					}
+
+					a:hover {
+						transition: all 0.25s ease-in-out;
+						color: $AdditionalColor-darkOrange;
+					}
+
+					h5 {
+						text-align: center;
+						text-transform: capitalize;
+						font-size: $fontSize_normal;
+						font-family: $fontStyle_option2;
+						color: $secondary_Purple;
+					}
+				}
+
+				.socials {
+					padding: 1rem;
+					display: flex;
+					list-style: none;
+					justify-content: center;
+
+					a {
+						margin: auto;
+						text-decoration: none;
+						color: $baseColor_white;
+						font-size: $fontSize_large;
+						font-family: $fontStyle_body;
+					}
+
+					a:hover {
+						transition: all 0.25s ease-in-out;
+						color: $AdditionalColor-darkOrange;
+					}
+				}
+			}
+
+			.copyright {
+				h2 {
+					text-align: center;
+				}
+			}
+		}
+
+		.background:hover {
+			box-shadow: $box-shadow-0;
+		}
+	}
+}
+
+// Devices In-between Mobile and tablets width
+@media screen and (min-width: 577px) and (max-width: 767px) {
+	/*======  NAVIGATION MENU  ======*/
+	header {
+		padding: 0.5rem;
+
+		.nav {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			/* Left div title section */
+			.navTitle {
+				width: fit-content;
+
+				a {
+					letter-spacing: 0.1rem;
+					text-decoration: none;
+					color: $baseColor_black;
+					font-size: $fontSize_large;
+					font-family: $fontStyle_header;
+				}
+
+				a:hover {
+					transition: all 0.25s ease-in-out;
+					color: $AdditionalColor_darkPurple;
+				}
+			}
+
+			/* Right links section */
+			.navMenu {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				margin-top: 15px;
+				justify-content: space-between;
+				border: #5d18ff 0.25rem solid;
+
+				button {
+					border: none;
+					list-style: none;
+					background: none;
+					margin-right: 1rem;
+
+					.bi {
+						color: $baseColor_black;
+						font-size: $fontSize_darkModeBtn;
+					}
+				}
+
+				li {
+					padding: 0 20px;
+					align-self: center;
+
+					a {
+						text-decoration: none;
+						color: $baseColor_black;
+						font-size: $fontSize_normal;
+						font-family: $fontStyle_option1;
+
+						.uil {
+							display: none;
+							padding: 7.5px;
+						}
+					}
+
+					a:hover {
+						transition: all 0.25s ease-in-out;
+						color: $AdditionalColor_darkPurple;
+					}
+				}
+			}
+
+			/* Mobile Menu Home Button */
+			.mobileHomebtn {
+				display: block;
+
+				button {
+					border: none;
+					list-style: none;
+					background: none;
+					color: $baseColor_black;
+					font-size: $fontSize_darkModeBtn;
+				}
+			}
+		}
+	}
+
+	/*====== HERO ======*/
+	.hero {
+		margin-bottom: 2.5rem;
+
+		.heroBackground {
+			background: url(/src/img/HeroBackground3.png);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+
+			.heroOuterBackground {
+				.heroInnerIackground {
+					display: flex;
+					flex-direction: column;
+					grid-row-gap: 2rem;
+
+					.heroLeftside {
+						width: fit-content;
+					}
+
+					.heroRightside {
+						.socialmMediaLinks {
+							a {
+								font-size: $fontSize_large-0;
+							}
+						}
+					}
+				}
+			}
+
+			.profileImageBackground {
+				display: none;
+			}
+		}
+	}
+
+	/*====== PROJECTS ======*/
+	.projects {
+		background-color: $backgroundColor_lightBlack;
+
+		.content {
+			background-color: $backgroundColor_White;
+
+			.mainside {
+				.recommendedProjects {
+					display: flex;
+					grid-row-gap: 2rem;
+					flex-direction: column;
+				}
+
+				/* ===== FEATURED PROJECTS SECTION =====*/
+				.outerContainer {
+					.info_containerN {
+						.content {
+							.moreProjects {
+								display: flex;
+								flex-direction: column;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.projects__content:hover {
+			transition: all 0.25s ease-in-out;
+			box-shadow: $box-shadow-6;
+		}
+	}
+
+	/* ===== ABOUT =====*/
+	.aboutMe {
+		padding: 1rem;
+		margin: 0rem;
+
+		.backgroundDisplay {
+			.backgroundCircle {
+				display: none;
+
+				.circle {
+					display: none;
+				}
+			}
+
+			.outerDisplay {
+				box-shadow: $box-shadow-0;
+
+				.outerDisplayBackground {
+					.about-me__profile-picture {
+						display: none;
+					}
+
+					.about-me__content {
+						.innerContent {
+							margin-bottom: 2rem;
+						}
+
+						.innerContent1 {
+							display: flex;
+							grid-column-gap: 0rem;
+
+							.hobbies {
+								display: flex;
+								border-radius: 5px;
+								box-shadow: $box-shadow-0;
+							}
+
+							.activities {
+								display: flex;
+								border-radius: 5px;
+								box-shadow: $box-shadow-0;
+							}
+						}
+					}
+				}
+			}
+
+			.outerDisplay:hover {
+				border: none;
+				box-shadow: $box-shadow-0;
+			}
+		}
+	}
+
+	/* ===== SKILLS =====*/
+	.skills {
+		padding: 1rem;
+		margin: 0rem;
+		background-color: $AdditionalColor-darkOrange;
+	}
+
+	/* ===== CONTACT ME =====*/
+	.contactUs {
+		.map {
+			iframe {
+				height: 34rem;
+				width: 40vw;
+			}
+		}
+	}
+
+	/* ===== FOOTER =====*/
+	.footer {
+		padding: 1rem;
+
+		.background {
+			box-shadow: $box-shadow-5;
+
+			.container {
+				display: flex;
+				flex-direction: column;
+
+				.content {
+					display: flex;
+					flex-direction: column;
+
+					a {
+						text-align: center;
+					}
+				}
+
+				.title {
+					padding: 1rem;
+					display: flex;
+					align-items: center;
+					flex-direction: column;
+
+					a {
+						text-align: center;
+						letter-spacing: 0.1rem;
+						text-decoration: none;
+						font-size: $fontSize_large;
+						color: $secondary_whiteDouble2;
+						font-family: $fontStyle_header;
+					}
+
+					a:hover {
+						transition: all 0.25s ease-in-out;
+						color: $AdditionalColor-darkOrange;
+					}
+
+					h5 {
+						text-align: center;
+						text-transform: capitalize;
+						font-size: $fontSize_normal;
+						font-family: $fontStyle_option2;
+						color: $secondary_Purple;
+					}
+				}
+
+				.socials {
+					padding: 1rem;
+					display: flex;
+					list-style: none;
+					justify-content: center;
+
+					a {
+						margin: auto;
+						text-decoration: none;
+						color: $baseColor_white;
+						font-size: $fontSize_large;
+						font-family: $fontStyle_body;
+					}
+
+					a:hover {
+						transition: all 0.25s ease-in-out;
+						color: $AdditionalColor-darkOrange;
+					}
+				}
+			}
+
+			.copyright {
+				h2 {
+					text-align: center;
+				}
+			}
+		}
+
+		.background:hover {
+			box-shadow: $box-shadow-0;
+		}
+	}
+}
+
+/* Tablet screen (portrait 768px - 1023px) // Change to (max-device-width: 768px) when finished */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	/*======  NAVIGATION MENU  ======*/
+	header {
+		padding: 0.5rem;
+
+		.nav {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			/* Left div title section */
+			.navTitle {
+				width: fit-content;
+
+				a {
+					letter-spacing: 0.1rem;
+					text-decoration: none;
+					color: $baseColor_black;
+					font-size: $fontSize_large;
+					font-family: $fontStyle_header;
+				}
+
+				a:hover {
+					transition: all 0.25s ease-in-out;
+					color: $AdditionalColor_darkPurple;
+				}
+			}
+
+			/* Mobile Menu Home Button */
+			.mobileHomebtn {
+				display: none;
+
+				button {
+					border: none;
+					list-style: none;
+					background: none;
+					color: $baseColor_black;
+					font-size: $fontSize_darkModeBtn;
+				}
+			}
+		}
+	}
+
+	/*====== HERO ======*/
+	.hero {
+		margin-bottom: 2.5rem;
+
+		.heroBackground {
+			background: url(/src/img/HeroBackground3.png);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+
+			.heroOuterBackground {
+				.heroInnerIackground {
+					display: flex;
+					flex-direction: column;
+					grid-row-gap: 2rem;
+
+					.heroLeftside {
+						width: fit-content;
+					}
+
+					.heroRightside {
+						.socialmMediaLinks {
+							a {
+								font-size: $fontSize_large-0;
+							}
+						}
+					}
+				}
+			}
+
+			.profileImageBackground {
+				display: none;
+			}
+		}
+	}
+
+	/*====== PROJECTS ======*/
+	.projects {
+		background-color: $backgroundColor_lightBlack;
+
+		.content {
+			background-color: $backgroundColor_White;
+
+			.mainside {
+				.recommendedProjects {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+				}
+
+				/* ===== FEATURED PROJECTS SECTION =====*/
+				.outerContainer {
+					.info_containerN {
+						.content {
+							.moreProjects {
+								display: grid;
+								grid-template-columns: repeat(2, 1fr);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.projects__content:hover {
+			transition: all 0.25s ease-in-out;
+			box-shadow: $box-shadow-6;
+		}
+	}
+
+	/* ===== ABOUT =====*/
+	.aboutMe {
+		padding: 1rem;
+		margin: 0rem;
+
+		.backgroundDisplay {
+			.backgroundCircle {
+				display: none;
+
+				.circle {
+					display: none;
+				}
+			}
+
+			.outerDisplay {
+				box-shadow: $box-shadow-0;
+
+				.outerDisplayBackground {
+					.about-me__profile-picture {
+						display: none;
+					}
+
+					.about-me__content {
+						.innerContent {
+							margin-bottom: 2rem;
+						}
+
+						.innerContent1 {
+							display: flex;
+							grid-column-gap: 0rem;
+							grid-row-gap: 2rem;
+
+							.hobbies {
+								display: flex;
+								border-radius: 5px;
+								box-shadow: $box-shadow-0;
+							}
+
+							.activities {
+								display: flex;
+								border-radius: 5px;
+								box-shadow: $box-shadow-0;
+							}
+						}
+					}
+				}
+			}
+
+			.outerDisplay:hover {
+				border: none;
+				box-shadow: $box-shadow-0;
+			}
+		}
+	}
+
+	/* ===== SKILLS =====*/
+	.skills {
+		padding: 1rem;
+		margin: 0rem;
+		background-color: $AdditionalColor-darkOrange;
+	}
+
+	/* ===== CONTACT ME =====*/
+	.contactUs {
+		.map {
+			iframe {
+				height: 34rem;
+				width: 40vw;
+			}
+		}
+	}
+
+	/* ===== FOOTER =====*/
+	.footer {
+		padding: 1rem;
+
+		.background {
+			box-shadow: $box-shadow-5;
+
+			.container {
+				display: flex;
+				flex-direction: column;
+
+				.content {
+					display: flex;
+					flex-direction: column;
+
+					a {
+						text-align: center;
+					}
+				}
+
+				.title {
+					padding: 1rem;
+					display: flex;
+					align-items: center;
+					flex-direction: column;
+
+					a {
+						text-align: center;
+						letter-spacing: 0.1rem;
+						text-decoration: none;
+						font-size: $fontSize_large;
+						color: $secondary_whiteDouble2;
+						font-family: $fontStyle_header;
+					}
+
+					a:hover {
+						transition: all 0.25s ease-in-out;
+						color: $AdditionalColor-darkOrange;
+					}
+
+					h5 {
+						text-align: center;
+						text-transform: capitalize;
+						font-size: $fontSize_normal;
+						font-family: $fontStyle_option2;
+						color: $secondary_Purple;
+					}
+				}
+
+				.socials {
+					padding: 1rem;
+					display: flex;
+					list-style: none;
+					justify-content: center;
+
+					a {
+						margin: auto;
+						text-decoration: none;
+						color: $baseColor_white;
+						font-size: $fontSize_large;
+						font-family: $fontStyle_body;
+					}
+
+					a:hover {
+						transition: all 0.25s ease-in-out;
+						color: $AdditionalColor-darkOrange;
+					}
+				}
+			}
+
+			.copyright {
+				h2 {
+					text-align: center;
+				}
+			}
+		}
+
+		.background:hover {
+			box-shadow: $box-shadow-0;
+		}
+	}
 }
