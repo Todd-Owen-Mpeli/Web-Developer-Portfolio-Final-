@@ -54,12 +54,14 @@ function heroBackgroundTwo() {
 /*============================== TOP SECTION DISPLAY RESIZE SECTION ==============================*/
 function resizeDiv() {
 	const displayStyles = document.getElementById("outerSection");
+	const titleChange = document.getElementById("topSectionTitle");
 
 	// Changing Div Element
 	displayStyles.style.transition = "1.25s";
 	displayStyles.style.color = "#fff";
 	displayStyles.style.backgroundColor = "#ff0055";
 	displayStyles.style.padding = "1.5rem";
+	titleChange.style.color = "rgba(255, 255, 255, 0.83)";
 }
 
 /*===== NEXT PAGE NEW TEXT =====*/
