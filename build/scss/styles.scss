@@ -627,9 +627,14 @@ header {
 			align-items: center;
 			justify-content: center;
 
+			p {
+				text-align: left;
+			}
+
 			#cc h2,
 			#header1,
 			#paraph1 {
+				text-align: left;
 				color: $baseColor_black;
 				font-size: $fontSize_large;
 				font-family: $fontStyle_option1;
