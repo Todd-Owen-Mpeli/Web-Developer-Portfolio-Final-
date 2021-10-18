@@ -1208,6 +1208,101 @@ header {
 				font-family: $fontStyle_body;
 				font-size: $fontSize_normal;
 			}
+
+			.software {
+				padding: 2rem;
+				display: flex;
+				justify-content: space-between;
+
+				.fab {
+					color: $secondary_Purple;
+					font-size: $fontSize_large-1;
+				}
+				.fab:hover {
+					transition: all 0.25s ease-in-out;
+					color: $secondary_orange;
+				}
+			}
+
+			/* ===== PROJECTS BOTTOM SECTION =====*/
+			/* Creative/ Common Applications */
+			.creativeApps {
+				h2 {
+					text-align: left;
+					margin-top: 1.5rem;
+					color: $baseColor_black;
+					font-family: $fontStyle_body;
+					font-size: $fontSize_normal;
+				}
+			}
+
+			/* ===== CREATIVE & COMMON SOFTWARE =====*/
+			.outerContainer {
+				display: grid;
+				margin-top: 1rem;
+				grid-template-columns: 1fr;
+				grid-template-rows: 1fr;
+				grid-template-areas: "notificationDisplay";
+
+				.revealSoftware {
+					text-align: start;
+					position: relative;
+					padding-top: 0.5rem;
+					padding-left: 0.5rem;
+					grid-area: notificationDisplay;
+
+					.buttonS {
+						border: none;
+						cursor: pointer;
+						padding: 0.5rem;
+						border-radius: 7.5px;
+						color: $baseColor_white;
+						font-size: $fontSize_small;
+						background-color: $AdditionalColor_Purple1;
+
+						/* Reveal Button Icon for Featured Projects */
+						.bi {
+							font-size: $fontSize_xSmall;
+						}
+					}
+				}
+
+				.SoftwareContent {
+					display: none;
+					grid-area: notificationDisplay;
+
+					.content {
+						padding: 1rem 0 2rem 1rem;
+						padding-top: 1rem;
+						border-radius: 10px;
+						background: $CreativeSoftwareGradient;
+						background-size: 1200% 600%;
+						background-position: center;
+						background-repeat: no-repeat;
+						animation: GradientKeyframes 20s ease-in-out infinite;
+
+						h2 {
+							font-family: $fontStyle_body;
+						}
+
+						.moreProjects {
+							margin-top: 2rem;
+							display: grid;
+							grid-template-columns: repeat(4, 1fr);
+
+							i {
+								color: $secondary_whiteDouble;
+								font-size: $fontSize_large-1;
+							}
+
+							i:hover {
+								transition: all 0.25s ease-in-out;
+								color: $secondary_whiteDouble;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 

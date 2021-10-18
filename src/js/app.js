@@ -2,6 +2,7 @@
 // Texts Displayed
 const submitBtn = document.getElementById("submit");
 const featuredProjectsBtn = document.getElementById("featuredProjectsBtn");
+const creativeAppsBtn = document.getElementById("creativeAppsBtn");
 
 /*=================================== DARK MODE ===================================*/
 const darkModeBtn = document.getElementById("darkModeBtn");
@@ -159,6 +160,54 @@ function showFeaturedApps() {
 
 featuredProjectsBtn.addEventListener("click", () => {
 	featuredProjectsDisplay();
+
+	hideFeaturedApps();
+	showFeaturedApps();
+});
+
+/*============================== CREATIVE & COMMON SOFTWARE SECTION ==============================*/
+/*===== ADDITIONAL SECTION DISPLAY =====*/
+function creativeSoftwareDisplay() {
+	const showDisplay = document.getElementById("SoftwareContent");
+	const displayStyles = document.getElementById("contentApps");
+	const plusBtn = document.getElementById("creativeAppsBtn");
+
+	// Changing Div styles
+	if (showDisplay.style.display === "none") {
+		showDisplay.style.display = "block";
+		displayStyles.style.color = "#fff";
+		displayStyles.style.minHeight = "5.5rem";
+		plusBtn.style.backgroundColor = "#ff0055";
+
+		// More Featured Projects Button
+		plusBtn.innerHTML = `<i class="bi bi-dash-lg"></i>`;
+	} else {
+		showDisplay.style.display = "none";
+		displayStyles.style.color = "#111";
+		plusBtn.style.backgroundColor = "#9d73ff";
+		// More Featured Projects Button
+		plusBtn.innerHTML = `<i class="bi bi-plus-lg"></i>`;
+	}
+}
+
+function hideFeaturedApps() {
+	// More Projects Section
+	$("#moreApp1").hide();
+	$("#moreApp2").hide();
+	$("#moreApp3").hide();
+	$("#moreApp4").hide();
+}
+
+function showFeaturedApps() {
+	// More Projects Section
+	$("#moreApp1").fadeIn(650);
+	$("#moreApp2").fadeIn(700);
+	$("#moreApp3").fadeIn(800);
+	$("#moreApp4").fadeIn(850);
+}
+
+creativeAppsBtn.addEventListener("click", () => {
+	creativeSoftwareDisplay();
 
 	hideFeaturedApps();
 	showFeaturedApps();
