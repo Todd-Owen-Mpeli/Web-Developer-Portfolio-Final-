@@ -117,18 +117,15 @@ submitBtn.addEventListener("click", () => {
 });
 
 /*============================== PROJECTS SECTION ==============================*/
+const moreProjects = document.getElementById("moreProjects");
+
+// moreProjects.style.height = "5rem";
 
 /*===== FEATURED SECTION DISPLAY =====*/
 function featuredProjectsDisplay() {
 	const showDisplay = document.getElementById("info_containerN");
 	const displayStyles = document.getElementById("content");
 	const plusBtn = document.getElementById("featuredProjectsBtn");
-
-	// More Projects Section
-	// const moreApp1 = document.getElementById("moreApp1");
-	// const moreApp2 = document.getElementById("moreApp2");
-	// const moreApp3 = document.getElementById("moreApp3");
-	// const moreApp4 = document.getElementById("moreApp4");
 
 	// Changing Div styles
 	if (showDisplay.style.display === "none") {
@@ -139,14 +136,6 @@ function featuredProjectsDisplay() {
 
 		// More Featured Projects Button
 		plusBtn.innerHTML = `<i class="bi bi-dash-lg"></i>`;
-
-		// More Featured Projects Apps
-		// moreApp1.style.transition = "all 2s";
-		// moreApp1.style.opacity = "0.5";
-		// moreApp2.style.opacity = "0.5";
-		// moreApp3.style.opacity = "1";
-		// moreApp4.style.opacity = "1";
-		ShowFeaturedApps();
 	} else {
 		showDisplay.style.display = "none";
 		displayStyles.style.color = "#111";
@@ -156,19 +145,24 @@ function featuredProjectsDisplay() {
 	}
 }
 
-function ShowFeaturedApps() {
+function hideFeaturedApps() {
 	// More Projects Section
-	const moreApp1 = document.getElementById("moreApp1");
-	const moreApp2 = document.getElementById("moreApp2");
-	const moreApp3 = document.getElementById("moreApp3");
-	const moreApp4 = document.getElementById("moreApp4");
-
-	moreApp1.style.opacity = "0.5";
-	moreApp2.style.opacity = "0.5";
-	moreApp3.style.opacity = "1";
-	moreApp4.style.opacity = "1";
+	$("#moreApp1").hide();
+	$("#moreApp2").hide();
+	$("#moreApp3").hide();
+	$("#moreApp4").hide();
+}
+function showFeaturedApps() {
+	// More Projects Section
+	$("#moreApp1").fadeIn(550);
+	$("#moreApp2").fadeIn(600);
+	$("#moreApp3").fadeIn(700);
+	$("#moreApp4").fadeIn(750);
 }
 
 featuredProjectsBtn.addEventListener("click", () => {
 	featuredProjectsDisplay();
+
+	hideFeaturedApps();
+	showFeaturedApps();
 });

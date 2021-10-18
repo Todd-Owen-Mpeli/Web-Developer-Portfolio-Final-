@@ -2,7 +2,6 @@
 @import "./fonts";
 @import "./colors";
 @import "./boxShadow";
-@import "./revealAnimations";
 
 /*==================== bASE ====================*/
 * {
@@ -627,10 +626,6 @@ header {
 			align-items: center;
 			justify-content: center;
 
-			p {
-				text-align: left;
-			}
-
 			#cc h2,
 			#header1,
 			#paraph1 {
@@ -717,8 +712,9 @@ header {
 						box-shadow: $box-shadow-5;
 
 						img {
-							height: 100%;
+							height: auto;
 							width: 100%;
+							object-fit: contain;
 						}
 					}
 
@@ -854,8 +850,9 @@ header {
 									box-shadow: $box-shadow-1;
 
 									img {
-										height: 100%;
+										height: auto;
 										width: 100%;
+										object-fit: contain;
 									}
 								}
 
