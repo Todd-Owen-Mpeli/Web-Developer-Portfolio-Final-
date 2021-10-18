@@ -278,11 +278,11 @@ p {
 				background-color: $backgroundColor_lightBlack;
 
 				.outerDisplayBackground {
-					.about-me__profile-picture {
+					.profilePicture {
 						display: none;
 					}
 
-					.about-me__content {
+					.content {
 						.innerContent {
 							h2 {
 								letter-spacing: 0.07rem;
@@ -912,8 +912,8 @@ header {
 
 	.backgroundDisplay {
 		display: grid;
-		grid-template-columns: minmax(1fr, auto);
-		grid-template-rows: minmax(1fr, auto);
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
 		grid-template-areas: "overlap";
 
 		.backgroundCircle {
@@ -946,35 +946,42 @@ header {
 
 		.outerDisplay {
 			grid-area: overlap;
-			align-self: center;
-			justify-self: center;
-			text-align: center;
-			display: inline-block;
-			border-radius: 15px;
 			padding: 1rem;
+			align-self: center;
+			text-align: center;
+			border-radius: 15px;
+			justify-self: center;
+			display: inline-block;
 			background-color: $backgroundColor_White;
 			box-shadow: $box-shadow-1;
 
 			.outerDisplayBackground {
+				margin: auto;
 				display: grid;
-				grid-template-columns: minmax(1fr, auto);
-				grid-template-rows: minmax(1fr, auto);
+				grid-template-columns: 1fr;
+				grid-template-rows: 1fr;
 				grid-template-areas: "profileOverlap";
 
-				.about-me__profile-picture {
+				.profilePicture {
 					grid-area: profileOverlap;
 					outline: none;
 					align-self: end;
-					bottom: -17.5px;
+					bottom: -16px;
 					position: relative;
 					justify-self: center;
+
+					img {
+						width: 100%;
+						height: auto;
+						object-fit: contain;
+					}
 				}
 
-				.about-me__content {
+				.content {
 					display: grid;
 					margin-bottom: 2rem;
-					grid-template-columns: minmax(1fr, auto);
-					grid-template-rows: minmax(1fr, auto);
+					grid-template-columns: 1fr;
+					grid-template-rows: 1fr;
 					grid-area: profileOverlap;
 
 					.innerContent {
@@ -999,7 +1006,7 @@ header {
 						grid-template-columns: repeat(2, 1fr);
 						grid-template-rows: 1fr;
 						grid-template-areas: "HobbiesActivities";
-						grid-column-gap: 25rem;
+						grid-column-gap: 20rem;
 						grid-row-gap: 1.5rem;
 						padding: 1rem;
 
@@ -1031,8 +1038,8 @@ header {
 							.imageOverlay {
 								display: grid;
 								text-align: center;
-								grid-template-columns: minmax(1fr, auto);
-								grid-template-rows: minmax(1fr, auto);
+								grid-template-columns: 1fr;
+								grid-template-rows: 1fr;
 								grid-template-areas: "xbox-overlap";
 
 								.HobbiesCircle {
@@ -1104,8 +1111,8 @@ header {
 							.imageOverlay {
 								display: grid;
 								text-align: center;
-								grid-template-columns: minmax(1fr, auto);
-								grid-template-rows: minmax(1fr, auto);
+								grid-template-columns: 1fr;
+								grid-template-rows: 1fr;
 								grid-template-areas: "xbox-overlap";
 
 								.HobbiesCircle {
@@ -1658,11 +1665,11 @@ header {
 				box-shadow: $box-shadow-0;
 
 				.outerDisplayBackground {
-					.about-me__profile-picture {
+					.profilePicture {
 						display: none;
 					}
 
-					.about-me__content {
+					.content {
 						.innerContent {
 							margin-bottom: 2rem;
 						}
@@ -1986,11 +1993,11 @@ header {
 				box-shadow: $box-shadow-0;
 
 				.outerDisplayBackground {
-					.about-me__profile-picture {
+					.profilePicture {
 						display: none;
 					}
 
-					.about-me__content {
+					.content {
 						.innerContent {
 							margin-bottom: 2rem;
 						}
@@ -2242,18 +2249,18 @@ header {
 				box-shadow: $box-shadow-0;
 
 				.outerDisplayBackground {
-					.about-me__profile-picture {
+					.profilePicture {
 						display: none;
 					}
 
-					.about-me__content {
+					.content {
 						.innerContent {
 							margin-bottom: 2rem;
 						}
 
 						.innerContent1 {
 							display: flex;
-							grid-column-gap: 0rem;
+							grid-column-gap: 0;
 							grid-row-gap: 2rem;
 
 							.hobbies {
