@@ -1,7 +1,3 @@
-/*=================================== WEBSITE SCROLL REVEAL ==============================*/
-// 	AOS CDN.js Reveal Animation
-AOS.init();
-
 /*============================== VARIABLES ==============================*/
 // Texts Displayed
 const submitBtn = document.getElementById("submit");
