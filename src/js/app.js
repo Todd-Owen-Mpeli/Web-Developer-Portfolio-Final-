@@ -117,10 +117,6 @@ submitBtn.addEventListener("click", () => {
 });
 
 /*============================== PROJECTS SECTION ==============================*/
-const moreProjects = document.getElementById("moreProjects");
-
-// moreProjects.style.height = "5rem";
-
 /*===== FEATURED SECTION DISPLAY =====*/
 function featuredProjectsDisplay() {
 	const showDisplay = document.getElementById("info_containerN");
@@ -152,12 +148,13 @@ function hideFeaturedApps() {
 	$("#moreApp3").hide();
 	$("#moreApp4").hide();
 }
+
 function showFeaturedApps() {
 	// More Projects Section
-	$("#moreApp1").fadeIn(550);
-	$("#moreApp2").fadeIn(600);
-	$("#moreApp3").fadeIn(700);
-	$("#moreApp4").fadeIn(750);
+	$("#moreApp1").fadeIn(650);
+	$("#moreApp2").fadeIn(700);
+	$("#moreApp3").fadeIn(800);
+	$("#moreApp4").fadeIn(850);
 }
 
 featuredProjectsBtn.addEventListener("click", () => {
