@@ -139,7 +139,7 @@ function fPButtonStyleShow() {
 	featuredProjectsBtn.style.padding = "0.5rem";
 	featuredProjectsBtn.style.borderRadius = "7.5px";
 	featuredProjectsBtn.style.fontSize = " 0.9rem";
-	featuredProjectsBtn.style.position = "relative !important";
+	featuredProjectsBtn.style.position = "relative";
 	featuredProjectsBtn.style.backgroundColor = "#7a42fc";
 	featuredProjectsBtn.innerHTML = `<i class="bi bi-plus-lg"></i>`;
 }
@@ -157,19 +157,17 @@ featuredProjectsBtn.addEventListener("click", () => {
 /*============================== CREATIVE & COMMON SOFTWARE SECTION ==============================*/
 const creativeAppsBtn = document.getElementById("creativeAppsBtn");
 
-/*===== FEATURED SECTION DISPLAY =====*/
-function featuredProjectsDisplay() {
+/*===== CREATIVE SOFTWARE SECTION DISPLAY =====*/
+function creativeSoftwareDisplay() {
 	const showDisplay = document.getElementById("softwareContent");
 
 	// Changing Div styles
-	hideFeaturedApps();
-	showFeaturedApps();
 	cSButtonStyleHide();
 
 	// Reveal Featured Projects section Animation
 	$("#softwareContent").fadeToggle(1000);
 
-	featuredProjectsBtn.addEventListener("click", () => {
+	creativeAppsBtn.addEventListener("click", () => {
 		cSButtonStyleShow();
 	});
 }
@@ -180,7 +178,7 @@ function cSButtonStyleShow() {
 	creativeAppsBtn.style.padding = "0.5rem";
 	creativeAppsBtn.style.borderRadius = "7.5px";
 	creativeAppsBtn.style.fontSize = " 0.9rem";
-	creativeAppsBtn.style.position = "relative !important";
+	creativeAppsBtn.style.position = "relative";
 	creativeAppsBtn.style.backgroundColor = "#7a42fc";
 	creativeAppsBtn.innerHTML = `<i class="bi bi-plus-lg"></i>`;
 }
@@ -224,5 +222,5 @@ function showFeaturedApps() {
 }
 
 creativeAppsBtn.addEventListener("click", () => {
-	featuredProjectsDisplay();
+	creativeSoftwareDisplay();
 });

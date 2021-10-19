@@ -817,8 +817,8 @@ header {
 					grid-area: notificationDisplay;
 
 					.content {
-						padding-top: 1rem;
 						padding: 2rem;
+						padding-top: 2rem;
 						border-radius: 10px;
 						align-items: center;
 						justify-content: center;
@@ -1218,6 +1218,7 @@ header {
 					color: $secondary_Purple;
 					font-size: $fontSize_large-1;
 				}
+
 				.fab:hover {
 					transition: all 0.25s ease-in-out;
 					color: $secondary_orange;
@@ -1246,9 +1247,7 @@ header {
 
 				.revealSoftware {
 					text-align: start;
-					position: relative !important;
-					padding-top: 0.5rem;
-					padding-left: 0.5rem;
+					position: relative;
 					grid-area: notificationDisplay;
 
 					#creativeAppsBtn {
@@ -1272,9 +1271,9 @@ header {
 					grid-area: notificationDisplay;
 
 					.content {
-						padding: 1rem 0 2rem 1rem;
-						padding-top: 1rem;
+						padding-top: 2rem;
 						border-radius: 10px;
+						padding: 1rem 0 2rem 1rem;
 						background: $CreativeSoftwareGradient;
 						background-size: 1200% 600%;
 						background-position: center;
@@ -1286,8 +1285,8 @@ header {
 						}
 
 						.moreProjects {
-							margin-top: 2rem;
 							display: grid;
+							margin-top: 2rem;
 							grid-template-columns: repeat(6, 1fr);
 							grid-row-gap: 3rem;
 
