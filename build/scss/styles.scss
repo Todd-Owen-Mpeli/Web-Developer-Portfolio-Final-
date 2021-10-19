@@ -802,9 +802,8 @@ header {
 						border-radius: 7.5px;
 						color: $baseColor_white;
 						font-size: $fontSize_small;
-						position: relative !important;
+						position: relative;
 						background-color: $AdditionalColor_Purple1;
-						border: #ff0055 0.25rem solid;
 
 						/* Reveal Button Icon for Featured Projects */
 						.bi {

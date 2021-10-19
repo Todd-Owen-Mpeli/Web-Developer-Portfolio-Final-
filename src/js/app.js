@@ -121,49 +121,74 @@ const featuredProjectsBtn = document.getElementById("featuredProjectsBtn");
 /*===== FEATURED SECTION DISPLAY =====*/
 function featuredProjectsDisplay() {
 	const showDisplay = document.getElementById("info_containerN");
-	// Reveal Animation
+
+	// Changing Div styles
+	fPButtonStyleHide();
+
+	// Reveal Featured Projects section Animation
 	$("#info_containerN").fadeToggle(1000);
 
-	// Checks if display is visible
-	if (showDisplay.style.display === "block") {
-		// Changing Div styles
-		featuredProjectsBtn.innerHTML = `<i class="bi bi-dash-lg"></i>`;
-		featuredProjectsBtn.style.backgroundColor = "transparent";
-	}
-
-	// else if (showDisplay.style.display === "none") {
-	// 	featuredProjectsBtn.innerHTML = `<i class="bi bi-plus-lg"></i>`;
-	// 	featuredProjectsBtn.style.backgroundColor = "#7a42fc";
-	// 	featuredProjectsBtn.style.color = "#7a42fc";
-	// }
+	featuredProjectsBtn.addEventListener("click", () => {
+		fPButtonStyleShow();
+	});
 }
+
+function fPButtonStyleShow() {
+	featuredProjectsBtn.style.border = "none";
+	featuredProjectsBtn.style.cursor = "pointer";
+	featuredProjectsBtn.style.padding = "0.5rem";
+	featuredProjectsBtn.style.borderRadius = "7.5px";
+	featuredProjectsBtn.style.fontSize = " 0.9rem";
+	featuredProjectsBtn.style.position = "relative !important";
+	featuredProjectsBtn.style.backgroundColor = "#7a42fc";
+	featuredProjectsBtn.innerHTML = `<i class="bi bi-plus-lg"></i>`;
+}
+
+function fPButtonStyleHide() {
+	featuredProjectsBtn.position = "relative";
+	featuredProjectsBtn.innerHTML = `<i class="bi bi-dash-lg"></i>`;
+	featuredProjectsBtn.style.backgroundColor = "transparent";
+}
+
+featuredProjectsBtn.addEventListener("click", () => {
+	featuredProjectsDisplay();
+});
 
 /*============================== CREATIVE & COMMON SOFTWARE SECTION ==============================*/
 const creativeAppsBtn = document.getElementById("creativeAppsBtn");
 
-/*===== ADDITIONAL SECTION DISPLAY =====*/
-function creativeSoftwareDisplay() {
+/*===== FEATURED SECTION DISPLAY =====*/
+function featuredProjectsDisplay() {
 	const showDisplay = document.getElementById("softwareContent");
-	const displayStyles = document.getElementById("contentApps");
-	const plusBtn = document.getElementById("creativeAppsBtn");
 
 	// Changing Div styles
-	if (showDisplay.style.display === "none") {
-		showDisplay.style.display = "block";
-		displayStyles.style.color = "#fff";
-		displayStyles.style.minHeight = "5.5rem";
-		plusBtn.style.backgroundColor = "#ff0055";
+	hideFeaturedApps();
+	showFeaturedApps();
+	cSButtonStyleHide();
 
-		// More Featured Projects Button
-		plusBtn.innerHTML = `<i class="bi bi-dash-lg"></i>`;
-	} else {
-		showDisplay.style.display = "none";
-		displayStyles.style.color = "#111";
-		plusBtn.style.backgroundColor = "#9d73ff";
+	// Reveal Featured Projects section Animation
+	$("#softwareContent").fadeToggle(1000);
 
-		// More Featured Projects Button
-		plusBtn.innerHTML = `<i class="bi bi-plus-lg"></i>`;
-	}
+	featuredProjectsBtn.addEventListener("click", () => {
+		cSButtonStyleShow();
+	});
+}
+
+function cSButtonStyleShow() {
+	creativeAppsBtn.style.border = "none";
+	creativeAppsBtn.style.cursor = "pointer";
+	creativeAppsBtn.style.padding = "0.5rem";
+	creativeAppsBtn.style.borderRadius = "7.5px";
+	creativeAppsBtn.style.fontSize = " 0.9rem";
+	creativeAppsBtn.style.position = "relative !important";
+	creativeAppsBtn.style.backgroundColor = "#7a42fc";
+	creativeAppsBtn.innerHTML = `<i class="bi bi-plus-lg"></i>`;
+}
+
+function cSButtonStyleHide() {
+	creativeAppsBtn.position = "relative";
+	creativeAppsBtn.innerHTML = `<i class="bi bi-dash-lg"></i>`;
+	creativeAppsBtn.style.backgroundColor = "transparent";
 }
 
 function hideFeaturedApps() {
@@ -199,8 +224,5 @@ function showFeaturedApps() {
 }
 
 creativeAppsBtn.addEventListener("click", () => {
-	creativeSoftwareDisplay();
-
-	hideFeaturedApps();
-	showFeaturedApps();
+	featuredProjectsDisplay();
 });
