@@ -192,18 +192,34 @@ function creativeSoftwareDisplay() {
 
 function hideFeaturedApps() {
 	// More Projects Section
-	$("#moreApp1").hide();
-	$("#moreApp2").hide();
-	$("#moreApp3").hide();
-	$("#moreApp4").hide();
+	$("#moreSoft1").hide();
+	$("#moreSoft2").hide();
+	$("#moreSoft3").hide();
+	$("#moreSoft4").hide();
+	$("#moreSoft5").hide();
+	$("#moreSoft6").hide();
+	$("#moreSoft7").hide();
+	$("#moreSoft8").hide();
+	$("#moreSoft9").hide();
+	$("#moreSoft10").hide();
+	$("#moreSoft11").hide();
+	$("#moreSoft12").hide();
 }
 
 function showFeaturedApps() {
 	// More Projects Section
-	$("#moreApp1").fadeIn(650);
-	$("#moreApp2").fadeIn(700);
-	$("#moreApp3").fadeIn(800);
-	$("#moreApp4").fadeIn(850);
+	$("#moreSoft1").fadeIn(650);
+	$("#moreSoft2").fadeIn(675);
+	$("#moreSoft3").fadeIn(700);
+	$("#moreSoft4").fadeIn(725);
+	$("#moreSoft5").fadeIn(750);
+	$("#moreSoft6").fadeIn(775);
+	$("#moreSoft7").fadeIn(800);
+	$("#moreSoft8").fadeIn(825);
+	$("#moreSoft9").fadeIn(850);
+	$("#moreSoft10").fadeIn(875);
+	$("#moreSoft11").fadeIn(900);
+	$("#moreSoft12").fadeIn(925);
 }
 
 creativeAppsBtn.addEventListener("click", () => {
