@@ -154,6 +154,10 @@ featuredProjectsBtn.addEventListener("click", () => {
 	featuredProjectsDisplay();
 });
 
+/*===== MORE INFO BUTTON DISPLAY =====*/
+// More info section
+function showProjectInfo() {}
+
 /*============================== CREATIVE & COMMON SOFTWARE SECTION ==============================*/
 const creativeAppsBtn = document.getElementById("creativeAppsBtn");
 
