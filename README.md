@@ -26,12 +26,12 @@ create a dark mode version of my portfolio as well as to create popover featues 
 6. Responsive website using Bootstrap 5 class intergration for mobile & tablet view-width breakpoints.
 
 # Personal Improvements
+Although I have a fairly good understanding of git operations and connecting to a remote repository. I would like to have a better understanding of team-orientated Git operations in a team workflow. Specifically branch and merge this will initialize a more realistic team development workflow process.
+
+# Potential Future Features
 Although my portfolio is fairly functional and provides the minimum viable product of showcasing my projects and skill set. The current version of my portfolio requires a list of improvements.
 
 1. Re-building the entire website with React and Node.js
-2. More Team-orientated Git operations specifically branch and merge this will initialize a more realistic team development workflow process.
-Javascript functions for more interactive website, specifically HTML DOM element manipulation, displaying or removing items which are avaliable or sold out.
 
 # Deployment
 Deployed with github pages. (Near Future)
-
