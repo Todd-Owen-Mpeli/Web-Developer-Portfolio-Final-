@@ -795,7 +795,7 @@ header {
 					padding-left: 0.5rem;
 					grid-area: notificationDisplay;
 
-					.buttonN {
+					#featuredProjectsBtn {
 						border: none;
 						cursor: pointer;
 						padding: 0.5rem;
@@ -1253,15 +1253,13 @@ header {
 				display: grid;
 				margin-top: 1rem;
 				grid-template-columns: 1fr;
-				grid-template-rows: 1fr;
-				grid-template-areas: "notificationDisplay";
+				grid-template-areas: "creativeSoftwareDisplay";
 
 				.revealSoftware {
 					text-align: start;
-					position: relative;
-					grid-area: notificationDisplay;
+					grid-area: creativeSoftwareDisplay;
 
-					#creativeAppsBtn {
+					.buttonN {
 						border: none;
 						cursor: pointer;
 						padding: 0.5rem;
@@ -1269,6 +1267,7 @@ header {
 						color: $baseColor_white;
 						font-size: $fontSize_small;
 						background-color: $AdditionalColor_Purple1;
+						border: #5d18ff 0.15rem solid;
 
 						/* Reveal Button Icon for Featured Projects */
 						.bi {
@@ -1279,7 +1278,7 @@ header {
 
 				.SoftwareContent {
 					display: none;
-					grid-area: notificationDisplay;
+					grid-area: creativeSoftwareDisplay;
 
 					.content {
 						padding-top: 2rem;

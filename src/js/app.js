@@ -120,17 +120,8 @@ const featuredProjectsBtn = document.getElementById("featuredProjectsBtn");
 
 /*===== FEATURED SECTION DISPLAY =====*/
 function featuredProjectsDisplay() {
-	const showDisplay = document.getElementById("info_containerN");
-
-	// Changing Div styles
-	fPButtonStyleHide();
-
 	// Reveal Featured Projects section Animation
-	$("#info_containerN").fadeToggle(1000);
-
-	featuredProjectsBtn.addEventListener("click", () => {
-		fPButtonStyleShow();
-	});
+	$("#info_containerN").slideToggle(350, fPButtonStyleHide());
 }
 
 function fPButtonStyleShow() {
@@ -142,12 +133,20 @@ function fPButtonStyleShow() {
 	featuredProjectsBtn.style.position = "relative";
 	featuredProjectsBtn.style.backgroundColor = "#7a42fc";
 	featuredProjectsBtn.innerHTML = `<i class="bi bi-plus-lg"></i>`;
+
+	featuredProjectsBtn.addEventListener("click", () => {
+		fPButtonStyleHide();
+	});
 }
 
 function fPButtonStyleHide() {
-	featuredProjectsBtn.position = "relative";
+	featuredProjectsBtn.style.position = "relative";
 	featuredProjectsBtn.innerHTML = `<i class="bi bi-dash-lg"></i>`;
 	featuredProjectsBtn.style.backgroundColor = "transparent";
+
+	featuredProjectsBtn.addEventListener("click", () => {
+		fPButtonStyleShow();
+	});
 }
 
 featuredProjectsBtn.addEventListener("click", () => {
@@ -163,34 +162,27 @@ const creativeAppsBtn = document.getElementById("creativeAppsBtn");
 
 /*===== CREATIVE SOFTWARE SECTION DISPLAY =====*/
 function creativeSoftwareDisplay() {
-	const showDisplay = document.getElementById("softwareContent");
-
-	// Changing Div styles
-	cSButtonStyleHide();
-
 	// Reveal Featured Projects section Animation
-	$("#softwareContent").fadeToggle(1000);
-
-	creativeAppsBtn.addEventListener("click", () => {
-		cSButtonStyleShow();
-	});
+	$("#softwareContent").slideToggle(350, cSButtonStyleHide());
 }
 
 function cSButtonStyleShow() {
-	creativeAppsBtn.style.border = "none";
-	creativeAppsBtn.style.cursor = "pointer";
-	creativeAppsBtn.style.padding = "0.5rem";
-	creativeAppsBtn.style.borderRadius = "7.5px";
-	creativeAppsBtn.style.fontSize = " 0.9rem";
-	creativeAppsBtn.style.position = "relative";
-	creativeAppsBtn.style.backgroundColor = "#7a42fc";
 	creativeAppsBtn.innerHTML = `<i class="bi bi-plus-lg"></i>`;
+	creativeAppsBtn.style.backgroundColor = "#7a42fc";
+
+	featuredProjectsBtn.addEventListener("click", () => {
+		cSButtonStyleHide();
+	});
 }
 
 function cSButtonStyleHide() {
-	creativeAppsBtn.position = "relative";
-	creativeAppsBtn.innerHTML = `<i class="bi bi-dash-lg"></i>`;
-	creativeAppsBtn.style.backgroundColor = "transparent";
+	// creativeAppsBtn.style.position = "relative";
+	// creativeAppsBtn.innerHTML = `<i class="bi bi-dash-lg"></i>`;
+	// creativeAppsBtn.style.backgroundColor = "transparent";
+
+	featuredProjectsBtn.addEventListener("click", () => {
+		cSButtonStyleShow();
+	});
 }
 
 function hideFeaturedApps() {
