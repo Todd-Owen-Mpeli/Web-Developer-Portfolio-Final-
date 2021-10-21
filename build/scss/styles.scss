@@ -380,6 +380,49 @@ p {
 			background-color: $baseColor_black;
 		}
 	}
+
+	.resumeTitle {
+		padding: 2rem;
+
+		h2 {
+			color: $secondary_whiteDouble2;
+		}
+
+		p {
+			color: $AdditionalColor-lightGrey;
+		}
+	}
+
+	.borderline {
+		border-bottom: $secondary_pinkRed 0.15rem solid;
+	}
+
+	.experience {
+		color: $AdditionalColor-lightGrey;
+
+		.title {
+			color: $secondary_whiteDouble2;
+		}
+
+		.content {
+			.joblist1,
+			.joblist {
+				h2 {
+					color: $secondary_whiteDouble;
+				}
+
+				div {
+					h5 {
+						color: $AdditionalColor-lightGrey;
+					}
+				}
+
+				h5 {
+					color: $AdditionalColor-lightGrey;
+				}
+			}
+		}
+	}
 }
 
 /*============================== NAVIGATION MENU =============================*/
