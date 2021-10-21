@@ -11,7 +11,9 @@ function darkModeBackground() {
 	const darkMHeroImage = document.getElementById("heroBackgroundImage");
 
 	// Toggle ON/OFF the dark Mode theme
+	$("#darkModeON").fadeIn(1000);
 	darkM.classList.toggle("darkModeON");
+
 	darkMHeroImage.style.transition = "all 2s";
 	darkMHeroImage.style.backgroundImage = "url('/src/img/HeroBackground2.png')";
 

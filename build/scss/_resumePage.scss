@@ -1,0 +1,78 @@
+/*============================== RESUME PAGE CSS STYLING =============================*/
+.resumeTitle {
+	padding: 2rem;
+
+	h2 {
+		text-align: center;
+		font-family: $fontStyle_header;
+		font-size: $fontSize_XL-large;
+	}
+
+	p {
+		color: $baseColor_black;
+		font-size: $fontSize_normal;
+		font-family: $fontStyle_body;
+	}
+}
+
+.borderline {
+	margin: 5rem 0;
+	border-bottom: $AdditionalColor-lightGrey2 0.15rem solid;
+}
+
+.experience {
+	display: flex;
+	padding: 2rem;
+	text-align: left;
+	color: $baseColor_black;
+	justify-content: space-between;
+
+	.title {
+		font-family: $fontStyle_body;
+		font-size: $fontSize_large-1;
+	}
+
+	.content {
+		display: flex;
+		margin-left: 6rem;
+		flex-direction: column;
+
+		.joblist1,
+		.joblist {
+			display: flex;
+			margin-top: 5rem;
+			flex-direction: column;
+			h2 {
+				font-family: $fontStyle_body;
+				font-size: $fontSize_large;
+			}
+
+			div {
+				display: flex;
+				margin-bottom: 1rem;
+
+				h5 {
+					margin: 0 0.25rem;
+					font-family: $fontStyle_body;
+					font-size: $fontSize_small;
+					color: $AdditionalColor-lightGrey;
+				}
+			}
+
+			h5 {
+				margin: 1rem 0;
+				font-family: $fontStyle_body;
+				font-size: $fontSize_small;
+				color: $AdditionalColor-lightGrey;
+			}
+			p {
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_body;
+			}
+		}
+
+		.joblist1 {
+			margin-top: 0rem;
+		}
+	}
+}

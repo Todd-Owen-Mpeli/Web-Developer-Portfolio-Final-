@@ -2,6 +2,7 @@
 @import "./fonts";
 @import "./colors";
 @import "./boxShadow";
+@import "./resumePage";
 
 /*==================== bASE ====================*/
 * {
@@ -86,6 +87,17 @@ p {
 				li {
 					a {
 						color: $secondary_whiteDouble;
+					}
+
+					.resumeBtn {
+						color: $baseColor_white;
+						background-color: $AdditionalColor_darkPurple;
+					}
+
+					.resumeBtn:hover {
+						transition: all 0.25s ease-in-out;
+						color: $baseColor_white;
+						background-color: $secondary_pinkRed;
 					}
 
 					a:hover {
@@ -419,7 +431,8 @@ header {
 				padding: 0 20px;
 				align-self: center;
 
-				a {
+				a,
+				.resumeBtn {
 					text-decoration: none;
 					color: $baseColor_black;
 					font-size: $fontSize_normal;
@@ -431,9 +444,22 @@ header {
 					}
 				}
 
+				.resumeBtn {
+					padding: 0.75rem;
+					border-radius: 5px;
+					color: $baseColor_white;
+					background-color: $secondary_pinkRed;
+				}
+
+				.resumeBtn:hover {
+					transition: all 0.25s ease-in-out;
+					color: $baseColor_white;
+					background-color: $AdditionalColor_darkPurple;
+				}
+
 				a:hover {
 					transition: all 0.25s ease-in-out;
-					color: $AdditionalColor_darkPurple;
+					color: $secondary_pinkRed;
 				}
 			}
 		}
