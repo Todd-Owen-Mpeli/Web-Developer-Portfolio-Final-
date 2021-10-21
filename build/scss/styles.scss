@@ -89,6 +89,10 @@ p {
 						color: $secondary_whiteDouble;
 					}
 
+					a:hover {
+						color: $AdditionalColor_Purple1;
+					}
+
 					.resumeBtn {
 						color: $baseColor_white;
 						background-color: $AdditionalColor_darkPurple;
@@ -99,9 +103,16 @@ p {
 						color: $baseColor_white;
 						background-color: $secondary_pinkRed;
 					}
+					/* Resume Page Button */
+					.livePortfolioBtn {
+						color: $baseColor_white;
+						background-color: $AdditionalColor_darkPurple;
+					}
 
-					a:hover {
-						color: $AdditionalColor_Purple1;
+					.livePortfolioBtn:hover {
+						transition: all 0.25s ease-in-out;
+						color: $baseColor_white;
+						background-color: $secondary_pinkRed;
 					}
 				}
 			}
@@ -381,6 +392,8 @@ p {
 		}
 	}
 
+	/*============================== RESUME PAGE =============================*/
+	/* ===== RESUME TITLE =====*/
 	.resumeTitle {
 		padding: 2rem;
 
@@ -393,10 +406,12 @@ p {
 		}
 	}
 
+	/* ===== BORDERLINE =====*/
 	.borderline {
 		border-bottom: $secondary_pinkRed 0.15rem solid;
 	}
 
+	/* ===== EXPERIENCE =====*/
 	.experience {
 		color: $AdditionalColor-lightGrey;
 
@@ -408,7 +423,7 @@ p {
 			.joblist1,
 			.joblist {
 				h2 {
-					color: $secondary_whiteDouble;
+					color: $AdditionalColor-lightGrey;
 				}
 
 				div {

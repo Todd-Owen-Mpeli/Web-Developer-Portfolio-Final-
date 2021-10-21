@@ -35,6 +35,16 @@ function darkModeBackground() {
 	}
 }
 
+// Resume Section
+function isActiveDarkMode() {
+	// Checks to verity if the dark mode is currently active
+	if (darkM.classList.contains("darkModeON")) {
+		// Load the Resume page in Dark mode
+	} else {
+		// Load the resume page
+	}
+}
+
 /*============================== HERO BACKGROUND IMAGE ==============================*/
 // Sets New Hero Background Image
 function heroBackgroundTwo() {

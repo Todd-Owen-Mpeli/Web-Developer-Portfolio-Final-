@@ -1,6 +1,43 @@
 /*============================== RESUME PAGE CSS STYLING =============================*/
+
+/*============================== NAVIGATION MENU =============================*/
+header {
+	.nav {
+		.navMenu {
+			li {
+				.livePortfolioBtn {
+					padding: 0.75rem;
+					border-radius: 5px;
+					text-decoration: none;
+					color: $baseColor_white;
+					font-size: $fontSize_normal;
+					font-family: $fontStyle_option1;
+					background-color: $secondary_pinkRed;
+				}
+
+				.livePortfolioBtn:hover {
+					transition: all 0.25s ease-in-out;
+					color: $baseColor_white;
+					background-color: $AdditionalColor_darkPurple;
+				}
+			}
+		}
+	}
+}
+
+/*============================== RESUME TITLE =============================*/
 .resumeTitle {
+	display: flex;
+	flex-direction: column;
 	padding: 2rem;
+
+	img {
+		width: 100%;
+		height: 200px;
+		border-radius: 5px;
+		margin-bottom: 5rem;
+		object-fit: contain;
+	}
 
 	h2 {
 		text-align: center;
@@ -16,11 +53,13 @@
 	}
 }
 
+/*============================== BORDERLINE =============================*/
 .borderline {
 	margin: 5rem 0;
 	border-bottom: $AdditionalColor-lightGrey2 0.15rem solid;
 }
 
+/*============================== EXPERIENCE =============================*/
 .experience {
 	display: flex;
 	padding: 2rem;
