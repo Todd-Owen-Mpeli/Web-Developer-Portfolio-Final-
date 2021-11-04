@@ -795,10 +795,13 @@ header {
 						transform: scale(1);
 						box-shadow: $box-shadow-5;
 
-						img {
-							height: auto;
-							width: 100%;
-							object-fit: contain;
+						a {
+							text-decoration: none;
+							img {
+								height: 225px;
+								width: 100%;
+								object-fit: cover;
+							}
 						}
 					}
 
@@ -842,6 +845,13 @@ header {
 								font-family: $fontStyle_body;
 								background-color: $AdditionalColor_Purple1;
 								box-shadow: $box-shadow-5;
+
+								a {
+									color: $baseColor_white;
+									font-size: $fontSize_xSmall;
+									font-family: $fontStyle_body;
+									text-decoration: none;
+								}
 							}
 
 							.more-info:hover {
@@ -933,10 +943,13 @@ header {
 									background-color: $secondary_Purple;
 									box-shadow: $box-shadow-1;
 
-									img {
-										height: auto;
-										width: 100%;
-										object-fit: contain;
+									a {
+										text-decoration: none;
+										img {
+											height: 150px;
+											width: 100%;
+											object-fit: cover;
+										}
 									}
 								}
 
