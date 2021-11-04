@@ -1837,6 +1837,16 @@ header {
 							.moreProjects {
 								display: flex;
 								flex-direction: column;
+
+								.apps {
+									.image {
+										a {
+											img {
+												height: 200px;
+											}
+										}
+									}
+								}
 							}
 						}
 					}
