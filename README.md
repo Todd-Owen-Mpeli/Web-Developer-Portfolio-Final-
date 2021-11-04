@@ -34,4 +34,4 @@ Although my portfolio is fairly functional and provides the minimum viable produ
 1. Re-building the entire website with React and Node.js
 
 # Deployment
-Deployed with github pages. (Near Future)
+Deployed with Github pages here. https://todd-owen-mpeli.github.io/Web-Developer-Portfolio-Final-/
