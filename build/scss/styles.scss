@@ -760,7 +760,11 @@ header {
 .projects {
 	padding: 1.5rem 0;
 	color: $baseColor_black;
-	background-color: $backgroundColor_lightBlack;
+	// background-color: $backgroundColor_lightBlack;
+	background-image: url("../img/HeroBackground3\ -\ Copy.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 
 	.content {
 		border-radius: 5px;
