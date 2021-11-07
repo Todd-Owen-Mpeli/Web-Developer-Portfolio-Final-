@@ -15,7 +15,8 @@ function darkModeBackground() {
 	darkM.classList.toggle("darkModeON");
 
 	darkMHeroImage.style.transition = "all 2s";
-	darkMHeroImage.style.backgroundImage = "url('/src/img/HeroBackground2.png')";
+	darkMHeroImage.style.backgroundImage =
+		"url('../img/HeroBackground2 - Copy.png')";
 
 	// Chicks to see if the website dark theme Mode is active
 	if (darkM.classList.contains("darkModeON")) {
