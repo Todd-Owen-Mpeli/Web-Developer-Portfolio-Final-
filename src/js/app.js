@@ -15,7 +15,8 @@ function darkModeBackground() {
 	darkM.classList.toggle("darkModeON");
 
 	darkMHeroImage.style.transition = "all 2s";
-	darkMHeroImage.style.backgroundImage = "url('../img/HeroBackgroundTwo.png')";
+	darkMHeroImage.style.backgroundImage =
+		"url('../img/HeroBackgroundThree.png')";
 
 	// Chicks to see if the website dark theme Mode is active
 	if (darkM.classList.contains("darkModeON")) {
@@ -52,7 +53,7 @@ function heroBackgroundTwo() {
 
 	// Changing Hero section
 	secondHeroBackground.style.backgroundImage =
-		"url('/src/img/HeroBackground3.png')";
+		"url('../img/HeroBackgroundThree.png')";
 	secondHeroBackground.style.backgroundSize = "cover";
 	secondHeroBackground.style.backgroundPosition = "center";
 	secondHeroBackground.style.backgroundRepeat = "no-repeat";
