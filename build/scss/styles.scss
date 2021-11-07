@@ -534,7 +534,7 @@ header {
 	margin-bottom: 5rem;
 
 	.heroBackground {
-		background-image: url("../img/HeroBackgroundZero");
+		background-image: url("img/HeroBackgroundZero");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -676,7 +676,7 @@ header {
 
 	.heroBackground:hover {
 		transition: all 0.25s ease-in-out;
-		background-image: url("../img/HeroBackgroundThree.png");
+		background-image: url("img/HeroBackgroundThree.png");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
