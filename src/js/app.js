@@ -15,8 +15,8 @@ function darkModeBackground() {
 	darkM.classList.toggle("darkModeON");
 
 	darkMHeroImage.style.transition = "all 2s";
-	darkMHeroImage.body.style.backgroundImage =
-		"url('https://image05.realme.net/general/20210715/1626338409118.jpg')";
+	// darkMHeroImage.body.style.backgroundImage =
+	// 	"url('https://image05.realme.net/general/20210715/1626338409118.jpg')";
 
 	// Chicks to see if the website dark theme Mode is active
 	if (darkM.classList.contains("darkModeON")) {
@@ -52,8 +52,8 @@ function heroBackgroundTwo() {
 	const secondHeroBackground = document.getElementById("heroBackgroundImage");
 
 	// Changing Hero section
-	secondHeroBackground.body.style.backgroundImage =
-		"url('https://image05.realme.net/general/20210715/1626338409118.jpg')";
+	// secondHeroBackground.body.style.backgroundImage =
+	// 	"url('https://image05.realme.net/general/20210715/1626338409118.jpg')";
 	secondHeroBackground.style.backgroundSize = "cover";
 	secondHeroBackground.style.backgroundPosition = "center";
 	secondHeroBackground.style.backgroundRepeat = "no-repeat";
