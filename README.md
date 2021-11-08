@@ -10,6 +10,10 @@ Continuing from my version 2 and versin 1 of my attempt to build a personal web 
 
 <img src="src/img/Landing%20Page%20Screenshot.png" width="100%" height="500px">
 
+2. Dark mode enabled for a better background colour gradient viewing.
+
+<img src="src/img/Landing%20Page%20Screenshot%20Dark%20mode.png" width="100%" height="500px">
+
 # Project Context
 Produce and display in one central location all the projects I have built. Do display my skill-set in various programming languages, HTML, CSS, SCSS, JavaScript, Java, etc.  
 
