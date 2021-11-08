@@ -3,6 +3,13 @@ My Final iteration of my Web Developer Portfolio (Updated currently) is construc
 
 Continuing from my version 2 and versin 1 of my attempt to build a personal web developer portfolio. I wanted to start making my latest portfolio even more interactable.
 
+
+# Hero Section
+
+1. All images are in 4K resolution, click to enlarge for better viewing.
+
+<img src="src/img/Landing%20Page%20Screenshot.png" width="100%" height="500px">
+
 # Project Context
 Produce and display in one central location all the projects I have built. Do display my skill-set in various programming languages, HTML, CSS, SCSS, JavaScript, Java, etc.  
 
