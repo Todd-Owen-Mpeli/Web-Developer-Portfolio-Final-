@@ -3,7 +3,6 @@ My Final iteration of my Web Developer Portfolio (Updated currently) is construc
 
 Continuing from my version 2 and versin 1 of my attempt to build a personal web developer portfolio. I wanted to start making my latest portfolio even more interactable.
 
-
 # Hero Section
 
 1. All images are in 4K resolution, click to enlarge for better viewing.
