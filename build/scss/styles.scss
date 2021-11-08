@@ -545,7 +545,6 @@ header {
 			grid-template-columns: 1fr;
 			grid-template-rows: 1fr;
 			grid-template-areas: "hero-overlap";
-			box-shadow: $box-shadow-5;
 
 			.heroInnerIackground {
 				grid-area: hero-overlap;
