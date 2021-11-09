@@ -366,6 +366,14 @@ p {
 				p {
 					color: $AdditionalColor-lightGrey;
 				}
+
+				/* ===== PROJECTS BOTTOM SECTION =====*/
+				/* Creative/ Common Applications */
+				.creativeApps {
+					h2 {
+						color: $AdditionalColor-lightGrey;
+					}
+				}
 			}
 		}
 	}
@@ -382,14 +390,20 @@ p {
 
 	/* ===== FOOTER =====*/
 	.footer {
-		background: $backgroundGradient;
-		background-size: 1200% 600%;
-		background-position: center;
-		background-repeat: no-repeat;
-		animation: GradientKeyframes 20s ease-in-out infinite;
+		// background: $backgroundGradient;
+		// background-size: 1200% 600%;
+		// background-position: center;
+		// background-repeat: no-repeat;
+		// animation: GradientKeyframes 20s ease-in-out infinite;
+		background-color: $backgroundColor_lightBlack;
 
 		.background {
 			background-color: $baseColor_black;
+			background: $backgroundGradient;
+			background-size: 1200% 600%;
+			background-position: center;
+			background-repeat: no-repeat;
+			animation: GradientKeyframes 20s ease-in-out infinite;
 		}
 	}
 
@@ -1912,6 +1926,30 @@ header {
 		padding: 1rem;
 		margin: 0rem;
 		background-color: $AdditionalColor-darkOrange;
+
+		.outerBackground {
+			.content {
+				.software {
+					padding: 2rem;
+					display: grid;
+					grid-template-columns: repeat(4, 1fr);
+					grid-row-gap: 2rem;
+				}
+
+				.outerContainer {
+					.SoftwareContent {
+						.content {
+							.moreProjects {
+								display: grid;
+								margin-top: 2rem;
+								grid-template-columns: repeat(4, 1fr);
+								grid-row-gap: 3rem;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
 	/* ===== CONTACT ME =====*/
@@ -2241,6 +2279,30 @@ header {
 		padding: 1rem;
 		margin: 0rem;
 		background-color: $AdditionalColor-darkOrange;
+
+		.outerBackground {
+			.content {
+				.software {
+					padding: 2rem;
+					display: grid;
+					grid-template-columns: repeat(4, 1fr);
+					grid-row-gap: 2rem;
+				}
+
+				.outerContainer {
+					.SoftwareContent {
+						.content {
+							.moreProjects {
+								display: grid;
+								margin-top: 2rem;
+								grid-template-columns: repeat(4, 1fr);
+								grid-row-gap: 3rem;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
 	/* ===== CONTACT ME =====*/
