@@ -373,9 +373,10 @@ p {
 	/* ===== CONTACT ME =====*/
 	.contactUs {
 		border-radius: 5px;
+		background-color: $backgroundColor_black;
 
 		.contacBox {
-			background-color: $backgroundColor_black;
+			background-color: $backgroundColor_lightBlack;
 		}
 	}
 
