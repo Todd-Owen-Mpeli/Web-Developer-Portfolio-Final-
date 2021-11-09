@@ -35,6 +35,12 @@ create a dark mode version of my portfolio as well as to create popover featues 
 5. SCSS File Structure, _font.scss, color.scss etc. Creating seperate SCSS files for different attributes for better CSS opimazation.
 6. Responsive website using Bootstrap 5 class intergration for mobile & tablet view-width breakpoints.
 
+# Project Section
+
+1. All images are in 4K resolution, click to enlarge for better viewing.
+
+<img src="src/img/Project%20section%20screenshot.png" width="100%" height="800px">
+
 # Personal Improvements
 Although I have a fairly good understanding of git operations and connecting to a remote repository. I would like to have a better understanding of team-orientated Git operations in a team workflow. Specifically branch and merge this will initialize a more realistic team development workflow process.
 
