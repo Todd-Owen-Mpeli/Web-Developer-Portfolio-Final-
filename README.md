@@ -7,7 +7,7 @@ Continuing from my version 2 and versin 1 of my attempt to build a personal web 
 
 1. All images are in 4K resolution, click to enlarge for better viewing.
 
-<img src="src/img/Landing%20Page%20Screenshot.png" width="100%" height="500px">
+<img src="src/img/Home%20and%20Project%20section%20screenshot.png" width="100%" height="900px">
 
 2. Dark mode enabled for a better background colour gradient viewing.
 
