@@ -60,73 +60,73 @@ function heroBackgroundTwo() {
 }
 
 /*============================== TOP SECTION DISPLAY RESIZE SECTION ==============================*/
-function resizeDiv() {
-	const displayStyles = document.getElementById("outerSection");
-	const titleChange = document.getElementById("topSectionTitle");
+// function resizeDiv() {
+// 	const displayStyles = document.getElementById("outerSection");
+// 	const titleChange = document.getElementById("topSectionTitle");
 
-	// Changing Div Element
-	displayStyles.style.transition = "1.25s";
-	displayStyles.style.color = "#fff";
-	displayStyles.style.backgroundColor = "#ff0055";
-	displayStyles.style.padding = "1.5rem";
-	titleChange.style.color = "rgba(255, 255, 255, 0.83)";
-}
+// 	// Changing Div Element
+// 	displayStyles.style.transition = "1.25s";
+// 	displayStyles.style.color = "#fff";
+// 	displayStyles.style.backgroundColor = "#ff0055";
+// 	displayStyles.style.padding = "1.5rem";
+// 	titleChange.style.color = "rgba(255, 255, 255, 0.83)";
+// }
 
 /*===== NEXT PAGE NEW TEXT =====*/
 // Page Display two
-function pageTwo() {
-	submitBtn.innerText = "Page 3";
-	// document.getElementsByClassName("header1").style.transition = "5s";
+// function pageTwo() {
+// 	submitBtn.innerText = "Page 3";
+// 	// document.getElementsByClassName("header1").style.transition = "5s";
 
-	const cc = document.getElementById("cc").remove();
+// 	const cc = document.getElementById("cc").remove();
 
-	const header1 = (document.getElementById("header1").innerHTML = `
-                <h2><strong> Future features </strong></h2>
-            `);
-	const paraph1 = (document.getElementById("paraph1").innerHTML = `
-                <p><br /> These are the features I want to implement.
-							<br />
-							<br />
-							1. User can share the result of a quiz on social media.<br />
-							2. Add multiple quizzes to the application. User can select which
-							one to take.<br />
-							3. User can create an account and have all the scores saved in his
-							dashboard
-							<br /> </p>
-            `);
+// 	const header1 = (document.getElementById("header1").innerHTML = `
+//                 <h2><strong> Future features </strong></h2>
+//             `);
+// 	const paraph1 = (document.getElementById("paraph1").innerHTML = `
+//                 <p><br /> These are the features I want to implement.
+// 							<br />
+// 							<br />
+// 							1. User can share the result of a quiz on social media.<br />
+// 							2. Add multiple quizzes to the application. User can select which
+// 							one to take.<br />
+// 							3. User can create an account and have all the scores saved in his
+// 							dashboard
+// 							<br /> </p>
+//             `);
 
-	//load's third page
-	submitBtn.addEventListener("click", () => {
-		pageThree();
-	});
-}
+// 	//load's third page
+// 	submitBtn.addEventListener("click", () => {
+// 		pageThree();
+// 	});
+// }
 
 // Page Display three
-function pageThree() {
-	submitBtn.innerText = "Page 1";
-	// const title1 = document.getElementById("questionnaire_title").remove();
+// function pageThree() {
+// 	submitBtn.innerText = "Page 1";
+// 	// const title1 = document.getElementById("questionnaire_title").remove();
 
-	const header1 = (document.getElementById("header1").innerHTML = `
-                <h2><strong> Real-World Applications </strong></h2>
-            `);
-	const paraph1 = (document.getElementById("paraph1").innerHTML = `
-                <p><br /> 1. User Feedback<br />
-							2. Targeted Surveys<br />
-							3. Scalable questionnaire<br />
-							4. Cost-Effective Data Collection </p>
-            `);
+// 	const header1 = (document.getElementById("header1").innerHTML = `
+//                 <h2><strong> Real-World Applications </strong></h2>
+//             `);
+// 	const paraph1 = (document.getElementById("paraph1").innerHTML = `
+//                 <p><br /> 1. User Feedback<br />
+// 							2. Targeted Surveys<br />
+// 							3. Scalable questionnaire<br />
+// 							4. Cost-Effective Data Collection </p>
+//             `);
 
-	// Reload's the default page
-	submitBtn.addEventListener("click", () => {
-		window.location.reload();
-	});
-}
+// 	// Reload's the default page
+// 	submitBtn.addEventListener("click", () => {
+// 		window.location.reload();
+// 	});
+// }
 
 // Submit Button Listener
-submitBtn.addEventListener("click", () => {
-	resizeDiv();
-	pageTwo();
-});
+// submitBtn.addEventListener("click", () => {
+// 	resizeDiv();
+// 	pageTwo();
+// });
 
 /*============================== PROJECTS SECTION ==============================*/
 const featuredProjectsBtn = document.getElementById("featuredProjectsBtn");
