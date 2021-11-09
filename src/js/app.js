@@ -26,12 +26,17 @@ function darkModeBackground() {
 	            <i class="bi bi-toggle-on"></i>
 	        `;
 		// darkModeBody.style.backgroundColor = "#111";
+		document.getElementById("profile-picture").src =
+			"img/About Me Dark Mode Profile Picture 880px x 600px.png";
 	} else {
 		// Remove the dark theme button
 		darkModeBtn.style.transition = "all 2s";
 		darkModeBtn.innerHTML = `
 	            <i class="bi bi-toggle-off"></i>
 	        `;
+
+		document.getElementById("profile-picture").src =
+			"img/About Me Profile Picture 880px x 600px.png";
 		// darkModeBody.style.backgroundColor = "#fff";
 	}
 }
@@ -44,19 +49,6 @@ function isActiveDarkMode() {
 	} else {
 		// Load the resume page
 	}
-}
-
-/*============================== HERO BACKGROUND IMAGE ==============================*/
-// Sets New Hero Background Image
-function heroBackgroundTwo() {
-	const secondHeroBackground = document.getElementById("heroBackgroundImage");
-
-	// Changing Hero section
-	// secondHeroBackground.body.style.backgroundImage =
-	// 	"url('https://image05.realme.net/general/20210715/1626338409118.jpg')";
-	secondHeroBackground.style.backgroundSize = "cover";
-	secondHeroBackground.style.backgroundPosition = "center";
-	secondHeroBackground.style.backgroundRepeat = "no-repeat";
 }
 
 /*============================== TOP SECTION DISPLAY RESIZE SECTION ==============================*/
