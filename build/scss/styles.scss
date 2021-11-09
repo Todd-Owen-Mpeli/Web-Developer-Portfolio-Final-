@@ -121,7 +121,7 @@ p {
 
 	/*====== HERO ======*/
 	.hero {
-		margin-bottom: 5rem;
+		margin: 0 auto;
 
 		.heroBackground {
 			border-radius: 5px 5px 0 0;
@@ -207,6 +207,7 @@ p {
 
 	/*====== PROJECTS ======*/
 	.projects {
+		margin: 0;
 		color: $baseColor_white;
 		background-color: $backgroundColor_black;
 
@@ -325,7 +326,7 @@ p {
 								}
 
 								p {
-									color: $AdditionalColor-lightGrey;
+									color: $baseColor_white;
 								}
 							}
 
@@ -336,7 +337,7 @@ p {
 								}
 
 								p {
-									color: $AdditionalColor-lightGrey;
+									color: $baseColor_white;
 								}
 							}
 						}

@@ -27,7 +27,7 @@ function darkModeBackground() {
 	        `;
 		// darkModeBody.style.backgroundColor = "#111";
 		document.getElementById("profile-picture").src =
-			"../img/About Me Dark Mode Profile Picture 880px x 600px.png";
+			"img/AboutMeDarkModeProfilePicture.png";
 	} else {
 		// Remove the dark theme button
 		darkModeBtn.style.transition = "all 2s";
@@ -36,7 +36,7 @@ function darkModeBackground() {
 	        `;
 
 		document.getElementById("profile-picture").src =
-			"img/About Me Profile Picture 880px x 600px.png";
+			"img/AboutMeProfilePicture.png";
 		// darkModeBody.style.backgroundColor = "#fff";
 	}
 }
