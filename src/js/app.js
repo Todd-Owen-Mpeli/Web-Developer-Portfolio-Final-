@@ -1,6 +1,6 @@
 /*============================== VARIABLES ==============================*/
 // Texts Displayed
-const submitBtn = document.getElementById("submit");
+// const submitBtn = document.getElementById("submit");
 
 /*=================================== DARK MODE ===================================*/
 const darkModeBtn = document.getElementById("darkModeBtn");
@@ -165,10 +165,6 @@ function fPButtonStyleHide() {
 featuredProjectsBtn.addEventListener("click", () => {
 	featuredProjectsDisplay();
 });
-
-/*===== MORE INFO BUTTON DISPLAY =====*/
-// More info section
-function showProjectInfo() {}
 
 /*============================== CREATIVE & COMMON SOFTWARE SECTION ==============================*/
 const creativeAppsBtn = document.getElementById("creativeAppsBtn");
