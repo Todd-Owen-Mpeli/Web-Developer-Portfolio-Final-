@@ -35,7 +35,7 @@ create a dark mode version of my portfolio as well as to create popover featues 
 5. SCSS File Structure, _font.scss, color.scss etc. Creating seperate SCSS files for different attributes for better CSS opimazation.
 6. Responsive website using Bootstrap 5 class intergration for mobile & tablet view-width breakpoints.
 
-# Project Section
+# Full Project Section
 
 1. All images are in 4K resolution, click to enlarge for better viewing.
 
