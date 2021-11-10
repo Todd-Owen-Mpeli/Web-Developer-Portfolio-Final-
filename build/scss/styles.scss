@@ -50,6 +50,10 @@ p {
 	line-height: 1.25em;
 }
 
+.mystyle {
+	display: none;
+}
+
 /*============================== DARK MODE THEME ==============================*/
 .darkModeON {
 	background: $backgroundColor_black;
@@ -1704,7 +1708,7 @@ header {
 @media screen and (max-width: 576px) {
 	/*======  NAVIGATION MENU  ======*/
 	header {
-		padding: 0.5rem;
+		padding: 1.5rem;
 
 		.nav {
 			display: flex;
@@ -1731,11 +1735,12 @@ header {
 
 			/* Right links section */
 			.navMenu {
-				display: grid;
+				display: none;
 				grid-template-columns: repeat(2, 1fr);
+				grid-row-gap: 2rem;
 				margin-top: 15px;
+				padding: 1rem;
 				justify-content: space-between;
-				border: #5d18ff 0.25rem solid;
 
 				button {
 					border: none;
@@ -2066,7 +2071,7 @@ header {
 @media screen and (min-width: 577px) and (max-width: 767px) {
 	/*======  NAVIGATION MENU  ======*/
 	header {
-		padding: 0.5rem;
+		padding: 1.5rem;
 
 		.nav {
 			display: flex;
@@ -2093,11 +2098,12 @@ header {
 
 			/* Right links section */
 			.navMenu {
-				display: grid;
-				grid-template-columns: repeat(2, 1fr);
+				display: none;
+				grid-template-columns: repeat(3, 1fr);
+				grid-row-gap: 2rem;
 				margin-top: 15px;
+				padding: 1rem;
 				justify-content: space-between;
-				border: #5d18ff 0.25rem solid;
 
 				button {
 					border: none;

@@ -2,6 +2,16 @@
 // Texts Displayed
 // const submitBtn = document.getElementById("submit");
 
+/*============================== MOBILE MENU REVEAL ==============================*/
+function revealMobileMenu() {
+	var element = document.getElementById("nav-menu");
+
+	$("#nav-menu").slideToggle(350, fPButtonStyleHide());
+	element.style.display = "grid";
+	element.style.margin = "0 auto";
+	element.style.alignItems = "center";
+}
+
 /*=================================== DARK MODE ===================================*/
 const darkModeBtn = document.getElementById("darkModeBtn");
 
