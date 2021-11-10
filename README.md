@@ -7,11 +7,11 @@ Continuing from my version 2 and versin 1 of my attempt to build a personal web 
 
 1. All images are in 4K resolution, click to enlarge for better viewing.
 
-<img src="src/img/Home%20and%20Project%20section%20screenshot.png" width="100%" height="900px">
+<img src="src/img/Home%20and%20Project%20section%20screenshot.png" width="100%" height="950px">
 
 2. Dark mode enabled for a better background colour gradient viewing.
 
-<img src="src/img/Landing%20Page%20Screenshot%20Dark%20mode.png" width="100%" height="500px">
+<img src="src/img/Home%20and%20Project%20section%20screenshot%20Dark%20mode.png" width="100%" height="950px">
 
 # Project Context
 Produce and display in one central location all the projects I have built. Do display my skill-set in various programming languages, HTML, CSS, SCSS, JavaScript, Java, etc.  
@@ -35,7 +35,7 @@ create a dark mode version of my portfolio as well as to create popover featues 
 5. SCSS File Structure, _font.scss, color.scss etc. Creating seperate SCSS files for different attributes for better CSS opimazation.
 6. Responsive website using Bootstrap 5 class intergration for mobile & tablet view-width breakpoints.
 
-# Project Section
+# Full Project Section
 
 1. All images are in 4K resolution, click to enlarge for better viewing.
 
