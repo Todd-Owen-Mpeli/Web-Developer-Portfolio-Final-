@@ -47,7 +47,7 @@ Although I have a fairly good understanding of git operations and connecting to 
 # Potential Future Features
 Although my portfolio is fairly functional and provides the minimum viable product of showcasing my projects and skill set. The current version of my portfolio requires a list of improvements.
 
-1. Re-building the entire website with React and Node.js
+1. Re-building the entire website with React and Next.js
 
 # Deployment
 Deployed with Github pages here. https://todd-owen-mpeli.github.io/Web-Developer-Portfolio-Final-/
