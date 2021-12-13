@@ -1,5 +1,5 @@
 # Web Developer Portfolio
-My Final iteration of my Web Developer Portfolio (Updated currently) is constructed solely with HTML, SCSS, Javascript & Jquery - featuring a google maps API, Bootstrap 5 framework, and a custom Scroll Reveal AOS library.
+This is my Client-Side Rendering old version of my Web Developer Portfolio. (version 3) is constructed solely with HTML, SCSS, Javascript & Jquery - featuring a google maps API, Bootstrap 5 framework, and a custom Scroll Reveal AOS library. The newest version, Server-Side Rendering version 4 is live here https://github.com/Todd-Owen-Mpeli/MyDeveloperPortfolio. 
 
 Continuing from my version 2 and versin 1 of my attempt to build a personal web developer portfolio. I wanted to start making my latest portfolio even more interactable.
 
